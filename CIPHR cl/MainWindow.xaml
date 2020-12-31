@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CIPHR"
         mc:Ignorable="d"
-        Title="CIPHR cl" Height="450" Width="800" WindowStyle="None" ResizeMode="NoResize">
+        Title="CIPHR cl" Height="200" Width="400" WindowStyle="None" ResizeMode="NoResize">
     <Grid>
-        
+        <Button Content="Button" Click="AuthLogin" HorizontalAlignment="Left" Margin="119,67,0,0" VerticalAlignment="Top" Width="148" Height="65"/>
+
     </Grid>
 </Window>

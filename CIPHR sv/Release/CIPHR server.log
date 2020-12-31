@@ -1,0 +1,32 @@
+﻿  sv_main.cpp
+  Warning: For timing resistance / side-channel attack prevention consider using harden options
+  Generating code
+  1 of 637 functions ( 0.2%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    12 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+webxlib.lib(ssl.obj) : warning LNK4099: PDB 'wolfssl.pdb' was not found with 'webxlib.lib(ssl.obj)' or at 'C:\Users\Printz\Desktop\CIPHR\CIPHR sv\Release\wolfssl.pdb'; linking object as if no debug info
+webxlib.lib(tls.obj) : warning LNK4099: PDB 'wolfssl.pdb' was not found with 'webxlib.lib(tls.obj)' or at 'C:\Users\Printz\Desktop\CIPHR\CIPHR sv\Release\wolfssl.pdb'; linking object as if no debug info
+webxlib.lib(wc_port.obj) : warning LNK4099: PDB 'wolfssl.pdb' was not found with 'webxlib.lib(wc_port.obj)' or at 'C:\Users\Printz\Desktop\CIPHR\CIPHR sv\Release\wolfssl.pdb'; linking object as if no debug info
+webxlib.lib(internal.obj) : warning LNK4099: PDB 'wolfssl.pdb' was not found with 'webxlib.lib(internal.obj)' or at 'C:\Users\Printz\Desktop\CIPHR\CIPHR sv\Release\wolfssl.pdb'; linking object as if no debug info
+webxlib.lib(hash.obj) : warning LNK4099: PDB 'wolfssl.pdb' was not found with 'webxlib.lib(hash.obj)' or at 'C:\Users\Printz\Desktop\CIPHR\CIPHR sv\Release\wolfssl.pdb'; linking object as if no debug info
+webxlib.lib(dh.obj) : warning LNK4099: PDB 'wolfssl.pdb' was not found with 'webxlib.lib(dh.obj)' or at 'C:\Users\Printz\Desktop\CIPHR\CIPHR sv\Release\wolfssl.pdb'; linking object as if no debug info
+webxlib.lib(rsa.obj) : warning LNK4099: PDB 'wolfssl.pdb' was not found with 'webxlib.lib(rsa.obj)' or at 'C:\Users\Printz\Desktop\CIPHR\CIPHR sv\Release\wolfssl.pdb'; linking object as if no debug info
+webxlib.lib(asn.obj) : warning LNK4099: PDB 'wolfssl.pdb' was not found with 'webxlib.lib(asn.obj)' or at 'C:\Users\Printz\Desktop\CIPHR\CIPHR sv\Release\wolfssl.pdb'; linking object as if no debug info
+webxlib.lib(random.obj) : warning LNK4099: PDB 'wolfssl.pdb' was not found with 'webxlib.lib(random.obj)' or at 'C:\Users\Printz\Desktop\CIPHR\CIPHR sv\Release\wolfssl.pdb'; linking object as if no debug info
+webxlib.lib(memory.obj) : warning LNK4099: PDB 'wolfssl.pdb' was not found with 'webxlib.lib(memory.obj)' or at 'C:\Users\Printz\Desktop\CIPHR\CIPHR sv\Release\wolfssl.pdb'; linking object as if no debug info
+webxlib.lib(sha.obj) : warning LNK4099: PDB 'wolfssl.pdb' was not found with 'webxlib.lib(sha.obj)' or at 'C:\Users\Printz\Desktop\CIPHR\CIPHR sv\Release\wolfssl.pdb'; linking object as if no debug info
+webxlib.lib(hmac.obj) : warning LNK4099: PDB 'wolfssl.pdb' was not found with 'webxlib.lib(hmac.obj)' or at 'C:\Users\Printz\Desktop\CIPHR\CIPHR sv\Release\wolfssl.pdb'; linking object as if no debug info
+webxlib.lib(sha256.obj) : warning LNK4099: PDB 'wolfssl.pdb' was not found with 'webxlib.lib(sha256.obj)' or at 'C:\Users\Printz\Desktop\CIPHR\CIPHR sv\Release\wolfssl.pdb'; linking object as if no debug info
+webxlib.lib(keys.obj) : warning LNK4099: PDB 'wolfssl.pdb' was not found with 'webxlib.lib(keys.obj)' or at 'C:\Users\Printz\Desktop\CIPHR\CIPHR sv\Release\wolfssl.pdb'; linking object as if no debug info
+webxlib.lib(md5.obj) : warning LNK4099: PDB 'wolfssl.pdb' was not found with 'webxlib.lib(md5.obj)' or at 'C:\Users\Printz\Desktop\CIPHR\CIPHR sv\Release\wolfssl.pdb'; linking object as if no debug info
+webxlib.lib(aes.obj) : warning LNK4099: PDB 'wolfssl.pdb' was not found with 'webxlib.lib(aes.obj)' or at 'C:\Users\Printz\Desktop\CIPHR\CIPHR sv\Release\wolfssl.pdb'; linking object as if no debug info
+webxlib.lib(wolfio.obj) : warning LNK4099: PDB 'wolfssl.pdb' was not found with 'webxlib.lib(wolfio.obj)' or at 'C:\Users\Printz\Desktop\CIPHR\CIPHR sv\Release\wolfssl.pdb'; linking object as if no debug info
+webxlib.lib(arc4.obj) : warning LNK4099: PDB 'wolfssl.pdb' was not found with 'webxlib.lib(arc4.obj)' or at 'C:\Users\Printz\Desktop\CIPHR\CIPHR sv\Release\wolfssl.pdb'; linking object as if no debug info
+webxlib.lib(des3.obj) : warning LNK4099: PDB 'wolfssl.pdb' was not found with 'webxlib.lib(des3.obj)' or at 'C:\Users\Printz\Desktop\CIPHR\CIPHR sv\Release\wolfssl.pdb'; linking object as if no debug info
+webxlib.lib(error.obj) : warning LNK4099: PDB 'wolfssl.pdb' was not found with 'webxlib.lib(error.obj)' or at 'C:\Users\Printz\Desktop\CIPHR\CIPHR sv\Release\wolfssl.pdb'; linking object as if no debug info
+webxlib.lib(integer.obj) : warning LNK4099: PDB 'wolfssl.pdb' was not found with 'webxlib.lib(integer.obj)' or at 'C:\Users\Printz\Desktop\CIPHR\CIPHR sv\Release\wolfssl.pdb'; linking object as if no debug info
+webxlib.lib(coding.obj) : warning LNK4099: PDB 'wolfssl.pdb' was not found with 'webxlib.lib(coding.obj)' or at 'C:\Users\Printz\Desktop\CIPHR\CIPHR sv\Release\wolfssl.pdb'; linking object as if no debug info
+webxlib.lib(wc_encrypt.obj) : warning LNK4099: PDB 'wolfssl.pdb' was not found with 'webxlib.lib(wc_encrypt.obj)' or at 'C:\Users\Printz\Desktop\CIPHR\CIPHR sv\Release\wolfssl.pdb'; linking object as if no debug info
+webxlib.lib(pwdbased.obj) : warning LNK4099: PDB 'wolfssl.pdb' was not found with 'webxlib.lib(pwdbased.obj)' or at 'C:\Users\Printz\Desktop\CIPHR\CIPHR sv\Release\wolfssl.pdb'; linking object as if no debug info
+  CIPHR server.vcxproj -> C:\Users\Printz\Desktop\CIPHR\CIPHR sv\Release\CIPHR server.exe

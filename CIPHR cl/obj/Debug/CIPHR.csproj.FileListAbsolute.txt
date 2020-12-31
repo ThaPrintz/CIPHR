@@ -1,0 +1,15 @@
+C:\Users\Printz\Desktop\CIPHR\CIPHR cl\bin\Debug\CIPHR.exe.config
+C:\Users\Printz\Desktop\CIPHR\CIPHR cl\bin\Debug\CIPHR.exe
+C:\Users\Printz\Desktop\CIPHR\CIPHR cl\bin\Debug\CIPHR.pdb
+C:\Users\Printz\Desktop\CIPHR\CIPHR cl\obj\Debug\CIPHR.csprojAssemblyReference.cache
+C:\Users\Printz\Desktop\CIPHR\CIPHR cl\obj\Debug\MainWindow.g.cs
+C:\Users\Printz\Desktop\CIPHR\CIPHR cl\obj\Debug\App.g.cs
+C:\Users\Printz\Desktop\CIPHR\CIPHR cl\obj\Debug\CIPHR_MarkupCompile.cache
+C:\Users\Printz\Desktop\CIPHR\CIPHR cl\obj\Debug\CIPHR_MarkupCompile.lref
+C:\Users\Printz\Desktop\CIPHR\CIPHR cl\obj\Debug\MainWindow.baml
+C:\Users\Printz\Desktop\CIPHR\CIPHR cl\obj\Debug\CIPHR.g.resources
+C:\Users\Printz\Desktop\CIPHR\CIPHR cl\obj\Debug\CIPHR.Properties.Resources.resources
+C:\Users\Printz\Desktop\CIPHR\CIPHR cl\obj\Debug\CIPHR.csproj.GenerateResource.cache
+C:\Users\Printz\Desktop\CIPHR\CIPHR cl\obj\Debug\CIPHR.csproj.CoreCompileInputs.cache
+C:\Users\Printz\Desktop\CIPHR\CIPHR cl\obj\Debug\CIPHR.exe
+C:\Users\Printz\Desktop\CIPHR\CIPHR cl\obj\Debug\CIPHR.pdb
