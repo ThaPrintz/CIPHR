@@ -13,3 +13,10 @@ C:\Users\Printz\Desktop\CIPHR\CIPHR cl\obj\Debug\CIPHR.csproj.GenerateResource.c
 C:\Users\Printz\Desktop\CIPHR\CIPHR cl\obj\Debug\CIPHR.csproj.CoreCompileInputs.cache
 C:\Users\Printz\Desktop\CIPHR\CIPHR cl\obj\Debug\CIPHR.exe
 C:\Users\Printz\Desktop\CIPHR\CIPHR cl\obj\Debug\CIPHR.pdb
+C:\Users\Printz\Desktop\CIPHR\CIPHR cl\bin\Debug\MaterialDesignColors.dll
+C:\Users\Printz\Desktop\CIPHR\CIPHR cl\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Printz\Desktop\CIPHR\CIPHR cl\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Printz\Desktop\CIPHR\CIPHR cl\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Printz\Desktop\CIPHR\CIPHR cl\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Printz\Desktop\CIPHR\CIPHR cl\obj\Debug\App.baml
+C:\Users\Printz\Desktop\CIPHR\CIPHR cl\obj\Debug\CIPHR.csproj.CopyComplete

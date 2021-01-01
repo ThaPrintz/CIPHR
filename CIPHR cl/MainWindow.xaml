@@ -12,9 +12,12 @@
 
         <Grid HorizontalAlignment="Left" Height="200" Margin="50,100,0,0" VerticalAlignment="Top" Width="550" Background="#BF000000">
             <Label Content="username" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Foreground="White" Height="40" FontSize="24" FontWeight="Bold" FontFamily="Lato Semibold" Margin="30,41,0,0"/>
-            <Label Content="password" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Foreground="White" Height="40" FontSize="24" FontWeight="Bold" FontFamily="Lato Semibold" Margin="30,116,0,0"/>
+            <Label Content="password" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Foreground="White" Height="40" FontSize="24" FontWeight="Bold" FontFamily="Lato Semibold" Margin="30,99,0,0"/>
 
-            <PasswordBox Style="{StaticResource MaterialDesignOutlinedPasswordFieldPasswordBox}" VerticalAlignment="Center" IsEnabled="{Binding Path=IsChecked, ElementName=MaterialDesignOutlinedPasswordFieldPasswordBoxEnabledComboBox}" md:HintAssist.Hint="Password" Width="350" Background="White" Margin="160,37,40,121" BorderBrush="{x:Null}" BorderThickness="0,0,0,1" FontSize="18" FontFamily="/CIPHR;component/#Lato Semibold" FontWeight="Bold" Height="42" />
+            <StackPanel>
+                <TextBox Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}" VerticalAlignment="Center" IsEnabled="{Binding Path=IsChecked, ElementName= MaterialDesignOutlinedTextFieldTextBoxEnabledComboBox}" Width="350" Background="White" Margin="160,37,40,0" BorderBrush="{x:Null}" BorderThickness="0,0,0,1" FontSize="18" FontFamily="/CIPHR;component/#Lato Semibold" FontWeight="Bold" Height="42" />
+                <PasswordBox Style="{StaticResource MaterialDesignOutlinedPasswordFieldPasswordBox}" VerticalAlignment="Center" IsEnabled="{Binding Path=IsChecked, ElementName= MaterialDesignOutlinedPasswordFieldPasswordBoxEnabledComboBox}" Width="350" Background="White" Margin="160,17,40,121" BorderThickness="0,0,0,1" FontSize="18" FontFamily="/CIPHR;component/#Lato Semibold" FontWeight="Bold" Height="42" Foreground="Black" />
+            </StackPanel>
         </Grid>
     </Grid>
 </Window>
