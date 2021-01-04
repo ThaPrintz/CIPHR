@@ -33,7 +33,13 @@ namespace CIPHR
         {
             Application.Current.Shutdown();
         }
-        
+
+        private void Reg_Click(object sender, RoutedEventArgs e)
+        {
+            var _regscr = new cl_register();
+            _regscr.Show();
+        }
+
         private void AuthLogin(object sender, RoutedEventArgs e)
         {
             System.Net.Sockets.TcpClient clientSocket = new System.Net.Sockets.TcpClient();
@@ -44,12 +50,31 @@ namespace CIPHR
 
                 NetworkStream serverStream = clientSocket.GetStream();
 
-                byte[] msg = Encoding.ASCII.GetBytes(String.Concat("[LOGIN_AUTH]" + uname.Text + ":" + pword.Password));
+                byte[] msg = Encoding.ASCII.GetBytes(String.Concat("[AUTH|" + uname.Text + ":" + pword.Password + "]"));
 
                 serverStream.Write(msg, 0, msg.Length);
                 serverStream.Flush();
-            } catch ( Exception ex) {
 
+                byte[] inStream = new byte[16];
+                Int32 bytes = serverStream.Read(inStream, 0, inStream.Length);
+                string returndata = System.Text.Encoding.ASCII.GetString(inStream, 0, bytes);
+
+                serverStream.Close();
+                clientSocket.Close();
+
+                if (returndata == "--[AUTHOK]--")
+                {
+                    this.Hide();
+                    var mainapp = new cl_main();
+                    mainapp.Closed += (s, args) => this.Close();
+                    mainapp.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid username or password!");
+                }
+            } catch ( Exception ex) {
+                MessageBox.Show(ex.Message);
             }
         }
     }

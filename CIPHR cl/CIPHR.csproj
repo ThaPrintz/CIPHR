@@ -75,12 +75,19 @@
       <DependentUpon>cl_login.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="cl_main.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="cl_register.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cl_main.xaml.cs">
+      <DependentUpon>cl_main.xaml</DependentUpon>
+    </Compile>
     <Compile Include="cl_register.xaml.cs">
       <DependentUpon>cl_register.xaml</DependentUpon>
     </Compile>
