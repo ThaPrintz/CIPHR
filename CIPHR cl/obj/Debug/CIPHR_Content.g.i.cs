@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("clogoo.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("ww.png")]
 
 
