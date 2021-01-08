@@ -10,26 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CIPHR
+namespace CIPHR_server
 {
     /// <summary>
-    /// Interaction logic for cl_main.xaml
+    /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class cl_main : Window
+    public partial class MainWindow : Window
     {
-        public cl_main()
+        public MainWindow()
         {
             InitializeComponent();
-
-            var _ctxm = new cl_main_ctxm();
-            _ctxm.Show();
-        }
-
-        private void _gmd(object sender, MouseButtonEventArgs e)
-        {
-            DragMove();
         }
     }
 }

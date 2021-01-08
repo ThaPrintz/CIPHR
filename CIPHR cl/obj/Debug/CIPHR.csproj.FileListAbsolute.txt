@@ -24,3 +24,4 @@ C:\Users\Printz\Desktop\CIPHR\CIPHR cl\obj\Debug\cl_login.baml
 C:\Users\Printz\Desktop\CIPHR\CIPHR cl\obj\Debug\cl_register.baml
 C:\Users\Printz\Desktop\CIPHR\CIPHR cl\obj\Debug\cl_main.g.cs
 C:\Users\Printz\Desktop\CIPHR\CIPHR cl\obj\Debug\cl_main.baml
+C:\Users\Printz\Desktop\CIPHR\CIPHR cl\obj\Debug\CIPHR.cl_main_ctxm.resources

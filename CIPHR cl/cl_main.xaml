@@ -6,14 +6,17 @@
         xmlns:local="clr-namespace:CIPHR"
         xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="cl_main" Height="600" Width="1000" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="cl_main" Height="600" Width="1000" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="favicon.ico" BorderThickness="2" BorderBrush="Black">
+    <Window.Effect>
+        <DropShadowEffect/>
+    </Window.Effect>
     <Grid>
-        <md:ColorZone Padding="16" CornerRadius="3" Margin="2,2,2,0" Height="75" Background="#FF2C2C2C" BorderBrush="Black" BorderThickness="2">
+        <md:ColorZone MouseDown="_gmd" Padding="16" CornerRadius="3" Margin="2,2,2,0" Height="75" Background="#FF2C2C2C" BorderBrush="Black" BorderThickness="2">
             <md:ColorZone.Effect>
                 <DropShadowEffect/>
             </md:ColorZone.Effect>
 
-            <md:Chip Content="Printz" Margin="-14,-13,0,-14" Background="#11000000" IconBackground="#FF001576" FontWeight="Bold" FontFamily="/CIPHR;component/#Roboto Slab" Height="Auto" Width="110" Foreground="White" FontSize="20">
+            <md:Chip Content="Printz" Margin="-14,-13,0,19" Background="#11000000" IconBackground="#FF001576" FontWeight="Bold" FontFamily="/CIPHR;component/#Roboto Slab" Height="Auto" Width="110" Foreground="White" FontSize="20">
                 <md:Chip.Effect>
                     <DropShadowEffect/>
                 </md:Chip.Effect>
@@ -24,40 +27,45 @@
             </md:Chip>
         </md:ColorZone>
 
-        <md:PackIcon Kind="SettingsOutline" Margin="934,2,0,0" Height="25" Width="25" Foreground="#FFFDFDFD" >
-            <md:PackIcon.Effect>
-                <DropShadowEffect/>
-            </md:PackIcon.Effect>
-        </md:PackIcon>
+        <Button Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="White" Margin="85,43,0,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <md:PackIcon Kind="SettingsOutline" Width="29" Height="29">
+                <md:PackIcon.Effect>
+                    <DropShadowEffect/>
+                </md:PackIcon.Effect>
+            </md:PackIcon>
+        </Button>
 
-        <md:PackIcon Kind="Headset" Margin="964,28,0,0" Width="26" Height="24" Foreground="White" >
-            <md:PackIcon.Effect>
-                <DropShadowEffect/>
-            </md:PackIcon.Effect>
-        </md:PackIcon>
+        <Button Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="White" Margin="46,43,0,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <md:PackIcon Kind="Headset" Width="29" Height="29">
+                <md:PackIcon.Effect>
+                    <DropShadowEffect/>
+                </md:PackIcon.Effect>
+            </md:PackIcon>
+        </Button>
 
-        <md:PackIcon Kind="MicrophoneVariant" Width="25" Height="25" Margin="934,27,0,0" Foreground="White" >
-            <md:PackIcon.Effect>
-                <DropShadowEffect/>
-            </md:PackIcon.Effect>
-        </md:PackIcon>
+        <Button Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="White" Margin="11,43,0,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <md:PackIcon Kind="MicrophoneVariant" Width="29" Height="29">
+                <md:PackIcon.Effect>
+                    <DropShadowEffect/>
+                </md:PackIcon.Effect>
+            </md:PackIcon>
+        </Button>
 
-        <md:PackIcon Kind="Door" Width="25" Height="25" Margin="965,2,0,0" Foreground="White" BorderThickness="0" >
-            <md:PackIcon.Effect>
-                <DropShadowEffect/>
-            </md:PackIcon.Effect>
-        </md:PackIcon>
+        <Button Height="Auto" Margin="0" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Top" HorizontalAlignment="Right" Width="70">
+            <md:PackIcon Kind="Door" Width="70" Height="70" Margin="0" Foreground="White" BorderThickness="0" HorizontalAlignment="Center" >
+                <md:PackIcon.Effect>
+                    <DropShadowEffect/>
+                </md:PackIcon.Effect>
+            </md:PackIcon>
+        </Button>
 
         <Grid VerticalAlignment="Top" HorizontalAlignment="Left" Width="638" Height="60" Margin="100,7,0,0" >
             <Button Height="60" Width="70" HorizontalAlignment="Left" BorderBrush="White" BorderThickness="2" Margin="38,0,0,0">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
                 <Button.Background>
                     <ImageBrush ImageSource="clg.png"/>
-                </Button.Background>
-            </Button>
-
-            <Button Height="60" Width="70" HorizontalAlignment="Left" BorderBrush="White" BorderThickness="2" Margin="116,0,0,0">
-                <Button.Background>
-                    <ImageBrush ImageSource="ww.png"/>
                 </Button.Background>
             </Button>
         </Grid>
