@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="CIPHR_server.pages.database"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CIPHR_server.pages"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="510" d:DesignWidth="1076" Background="#FF1B1B1B">
+    <Grid>
+        <Label Content="Database Manager" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Top" FontSize="48" FontFamily="Arial Black" Foreground="White">
+            <Label.Effect>
+                <DropShadowEffect ShadowDepth="7"/>
+            </Label.Effect>
+        </Label>
+            
+    </Grid>
+</UserControl>

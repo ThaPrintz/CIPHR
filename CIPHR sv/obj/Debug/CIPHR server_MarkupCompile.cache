@@ -1,0 +1,20 @@
+﻿CIPHR server
+
+
+winexe
+C#
+.cs
+C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\
+CIPHR_server
+none
+false
+DEBUG;TRACE
+C:\Users\Printz\Desktop\CIPHR\CIPHR sv\App.xaml
+6-411068049
+2146035319
+12453172241
+15706643276
+MainWindow.xaml;pages\console.xaml;pages\database.xaml;pages\logs.xaml;pages\server.xaml;pages\settings.xaml;
+
+False
+
