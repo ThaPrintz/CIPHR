@@ -46,10 +46,17 @@
             </StackPanel>
         </materialDesign:Card>
 
-        <Button HorizontalAlignment="Left" VerticalAlignment="Center" Width="175" Background="{x:Null}" Height="55" Margin="275,0,0,100" BorderThickness="2" BorderBrush="White" Foreground="White">
+        <Button HorizontalAlignment="Left" VerticalAlignment="Center" Width="175" Click="Startsv" Background="{x:Null}" Height="55" Margin="275,0,0,100" BorderThickness="3" Foreground="White">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
+            <Button.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF7F94EE" Offset="0"/>
+                    <GradientStop Color="#FF00D09C" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.BorderBrush>
+
 
             <StackPanel Height="55" Width="175" Margin="-15,-4,0,0">
                 <materialDesign:PackIcon Kind="PowerSettings" Height="45" Width="45" Margin="2,3,0,0" VerticalAlignment="Center"/>
@@ -57,11 +64,17 @@
             </StackPanel>
         </Button>
 
-        <Button HorizontalAlignment="Center" VerticalAlignment="Center" Width="175" Background="{x:Null}" Height="55" Margin="350,0,0,100" BorderThickness="2" BorderBrush="White" Foreground="White">
+        <Button HorizontalAlignment="Center" VerticalAlignment="Center" Width="175" Background="{x:Null}" Height="55" Margin="350,0,0,100" BorderThickness="3" Foreground="White">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
-
+            <Button.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF7F94EE" Offset="0"/>
+                    <GradientStop Color="#FF00D09C" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.BorderBrush>
+            
             <StackPanel Height="55" Width="175" Margin="-15,-4,0,0">
                 <materialDesign:PackIcon Kind="PowerOff" Height="45" Width="45" Margin="2,4,0,0" VerticalAlignment="Center"/>
                 <TextBlock Text="Stop server" FontSize="19" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="28,-43,0,0" FontFamily="Segoe UI Black" Foreground="White" FontWeight="Bold"/>

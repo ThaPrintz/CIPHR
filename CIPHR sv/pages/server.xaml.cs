@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -23,6 +24,13 @@ namespace CIPHR_server.pages
         public server()
         {
             InitializeComponent();
+        }
+
+        private void Startsv(object sender, RoutedEventArgs e)
+        {
+            Thread _DT = new Thread(new ThreadStart(cserver.Start));
+            _DT.SetApartmentState(ApartmentState.STA);
+            _DT.Start();
         }
     }
 }

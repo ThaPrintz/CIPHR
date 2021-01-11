@@ -181,6 +181,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>ciphr_users.mdf</DependentUpon>
     </Content>
+    <Resource Include="clogoo.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

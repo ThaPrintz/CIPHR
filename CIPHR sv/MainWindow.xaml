@@ -12,7 +12,8 @@
 
     <StackPanel Background="WhiteSmoke">
         <Grid Height="50">
-            <StackPanel MouseDown="_gmd" Orientation="Horizontal" VerticalAlignment="Top" Margin="10 0">
+
+            <StackPanel MouseDown="_gmd" Orientation="Horizontal" VerticalAlignment="Top" Margin="0">
                 <Button Uid="0" Width="150" Content="SERVER" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Click="Button_Click" FontFamily="Segoe UI Black" FontSize="18" FontWeight="Normal"/>
                 <Button Uid="1" Width="150" Content="SETTINGS" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Click="Button_Click" FontFamily="Segoe UI Black" FontSize="18"/>
                 <Button Uid="2" Width="150" Content="CONSOLE" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Click="Button_Click" FontFamily="Segoe UI Black" FontSize="18"/>
@@ -22,7 +23,26 @@
                     <materialDesign:PackIcon Kind="Power" Foreground="Red" Width="35" Height="35" />
                 </Button>
             </StackPanel>
-            <Grid x:Name="GridCursor" Width="150" Height="5" Background="Black" HorizontalAlignment="Left" Margin="0, 44, 0, 0"/>
+            <Grid x:Name="GridCursor" Width="150" Height="11" HorizontalAlignment="Left" Margin="0, 35, 0, 0">
+                <Grid.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <LinearGradientBrush.RelativeTransform>
+                            <TransformGroup>
+                                <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                                <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                                <RotateTransform Angle="90" CenterY="0.5" CenterX="0.5"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </LinearGradientBrush.RelativeTransform>
+                        <GradientStop Color="#FF7F94EE" Offset="0.022"/>
+                        <GradientStop Color="#FF00D09C" Offset="1"/>
+                    </LinearGradientBrush>
+                </Grid.Background>
+                <Grid.Effect>
+                    <DropShadowEffect ShadowDepth="3"/>
+                </Grid.Effect>
+            </Grid>
+            <Image HorizontalAlignment="Left" Height="50" Margin="780,0,0,0" VerticalAlignment="Top" Width="219" Source="clogoo.png"/>
         </Grid>
 
         <Grid x:Name="GridMain" Height="510" Background="#FF191919" Opacity="0.9">

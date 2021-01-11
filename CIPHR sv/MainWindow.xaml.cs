@@ -36,7 +36,7 @@ namespace CIPHR_server
         {
             int index = int.Parse(((Button)e.Source).Uid);
 
-            GridCursor.Margin = new Thickness(10 + (150 * index), 44, 0, 0);
+            GridCursor.Margin = new Thickness(0 + (150 * index), 35, 0, 0);
 
             switch (index)
             {
