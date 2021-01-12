@@ -78,6 +78,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="controls\ConLogMsg.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="controls\serverConsole.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -91,15 +99,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ciphr_usersDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="controls\ConLogMsg.xaml.cs">
+      <DependentUpon>ConLogMsg.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="controls\serverConsole.xaml.cs">
+      <DependentUpon>serverConsole.xaml</DependentUpon>
+    </Compile>
     <Compile Include="cserver.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="pages\console.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="pages\database.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -118,9 +128,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="pages\console.xaml.cs">
-      <DependentUpon>console.xaml</DependentUpon>
-    </Compile>
     <Compile Include="pages\database.xaml.cs">
       <DependentUpon>database.xaml</DependentUpon>
     </Compile>

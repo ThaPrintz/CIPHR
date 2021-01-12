@@ -28,6 +28,8 @@ namespace CIPHR_server.pages
 
         private void Startsv(object sender, RoutedEventArgs e)
         {
+            MainWindow.cprint("server launched");
+
             Thread _DT = new Thread(new ThreadStart(cserver.Start));
             _DT.SetApartmentState(ApartmentState.STA);
             _DT.Start();

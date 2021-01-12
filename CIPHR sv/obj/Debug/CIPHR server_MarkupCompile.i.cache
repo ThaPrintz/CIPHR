@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Printz\Desktop\CIPHR\CIPHR sv\App.xaml
-6-411068049
+71230867076
 2146035319
-131149744164
+142078337294
 15706643276
-MainWindow.xaml;pages\console.xaml;pages\database.xaml;pages\logs.xaml;pages\server.xaml;pages\settings.xaml;
+controls\ConLogMsg.xaml;controls\serverConsole.xaml;MainWindow.xaml;pages\database.xaml;pages\logs.xaml;pages\server.xaml;pages\settings.xaml;
 
-False
+True
 

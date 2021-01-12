@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CIPHR_server.controls;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,11 +21,19 @@ namespace CIPHR_server
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static serverConsole _con = new serverConsole();
+
         public MainWindow()
         {
             InitializeComponent();
 
             GridMain.Children.Add(new pages.server());
+            _con.clog("testing");
+        }
+
+        public static void cprint(String std)
+        {
+            MainWindow._con.clog(std);
         }
 
         private void _gmd(object sender, MouseButtonEventArgs e)
@@ -36,7 +45,7 @@ namespace CIPHR_server
         {
             int index = int.Parse(((Button)e.Source).Uid);
 
-            GridCursor.Margin = new Thickness(0 + (150 * index), 35, 0, 0);
+            GridCursor.Margin = new Thickness(221 + (148 * index), 35, 0, 0);
 
             switch (index)
             {
@@ -52,7 +61,7 @@ namespace CIPHR_server
                     break;
                 case 2:
                     GridMain.Children.Clear();
-                    GridMain.Children.Add(new pages.console());
+                    GridMain.Children.Add(_con);
 
                     break;
                 case 3:

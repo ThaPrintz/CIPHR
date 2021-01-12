@@ -5,12 +5,31 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Net;
 using System.Net.Sockets;
+using System.Windows.Automation.Peers;
 
 namespace CIPHR_server
 {
     class cserver
     {
         public static string data = null;
+
+        public static void cPrint(String std)
+        {
+            MainWindow._con.Dispatcher.Invoke(() =>
+            {
+                MainWindow._con.clog(std);
+            });
+        }
+
+        public static string[] ParseCmd(string ccmd)
+        {
+            var cmd = ccmd.Split('|');
+            var data = cmd[1].Split(':');
+
+            string[] ret = {cmd[0], data[0], data[1] };
+
+            return ret;
+        }
 
         public static void Start()
         {
@@ -32,7 +51,11 @@ namespace CIPHR_server
 
                     int bytesRec = handler.Receive(bytes);
                     data += Encoding.ASCII.GetString(bytes, 0, bytesRec);
-                    
+
+                    var pkg = ParseCmd(data);
+                    cPrint("NET CMD: " + pkg[0].Remove(0, 1));
+                    cPrint("arg1: " + pkg[1]);
+                    cPrint("arg2: " + pkg[2].Remove(pkg[2].Length-1, 1));
                 }
             }
             catch (Exception e)

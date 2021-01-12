@@ -14,16 +14,18 @@
         <Grid Height="50">
 
             <StackPanel MouseDown="_gmd" Orientation="Horizontal" VerticalAlignment="Top" Margin="0">
+                <Image HorizontalAlignment="Left" Height="50" Margin="0,0,0,0" VerticalAlignment="Top" Width="219" Source="clogoo.png"/>
                 <Button Uid="0" Width="150" Content="SERVER" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Click="Button_Click" FontFamily="Segoe UI Black" FontSize="18" FontWeight="Normal"/>
                 <Button Uid="1" Width="150" Content="SETTINGS" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Click="Button_Click" FontFamily="Segoe UI Black" FontSize="18"/>
                 <Button Uid="2" Width="150" Content="CONSOLE" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Click="Button_Click" FontFamily="Segoe UI Black" FontSize="18"/>
                 <Button Uid="3" Width="150" Content="LOGS" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Click="Button_Click" FontSize="18" FontFamily="Segoe UI Black"/>
                 <Button Uid="4" Width="150" Content="DATABASE" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Click="Button_Click" FontSize="18" FontFamily="Segoe UI Black"/>
-                <Button Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Center" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" HorizontalAlignment="Right" Margin="270,0,0,0">
-                    <materialDesign:PackIcon Kind="Power" Foreground="Red" Width="35" Height="35" />
+                <Button Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Center" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" HorizontalAlignment="Right" Margin="60,0,0,0">
+                    <materialDesign:PackIcon Kind="Power" Foreground="Red" Width="45" Height="45" HorizontalAlignment="Center" VerticalAlignment="Center" />
                 </Button>
             </StackPanel>
-            <Grid x:Name="GridCursor" Width="150" Height="11" HorizontalAlignment="Left" Margin="0, 35, 0, 0">
+            
+            <Grid x:Name="GridCursor" Width="148" Height="11" HorizontalAlignment="Left" Margin="221, 35, 0, 0">
                 <Grid.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <LinearGradientBrush.RelativeTransform>
@@ -39,10 +41,10 @@
                     </LinearGradientBrush>
                 </Grid.Background>
                 <Grid.Effect>
-                    <DropShadowEffect ShadowDepth="3"/>
+                    <BlurEffect Radius="3"/>
                 </Grid.Effect>
             </Grid>
-            <Image HorizontalAlignment="Left" Height="50" Margin="780,0,0,0" VerticalAlignment="Top" Width="219" Source="clogoo.png"/>
+ 
         </Grid>
 
         <Grid x:Name="GridMain" Height="510" Background="#FF191919" Opacity="0.9">

@@ -1,8 +1,5 @@
-C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\CIPHR server.csprojAssemblyReference.cache
-C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\MainWindow.g.cs
-C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\App.g.cs
-C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\CIPHR server_MarkupCompile.cache
-C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\CIPHR server_MarkupCompile.lref
+C:\Users\Printz\Desktop\CIPHR\CIPHR sv\bin\Debug\ciphr_users.mdf
+C:\Users\Printz\Desktop\CIPHR\CIPHR sv\bin\Debug\ciphr_users_log.ldf
 C:\Users\Printz\Desktop\CIPHR\CIPHR sv\bin\Debug\CIPHR server.exe.config
 C:\Users\Printz\Desktop\CIPHR\CIPHR sv\bin\Debug\CIPHR server.exe
 C:\Users\Printz\Desktop\CIPHR\CIPHR sv\bin\Debug\CIPHR server.pdb
@@ -11,7 +8,25 @@ C:\Users\Printz\Desktop\CIPHR\CIPHR sv\bin\Debug\MaterialDesignThemes.Wpf.dll
 C:\Users\Printz\Desktop\CIPHR\CIPHR sv\bin\Debug\MaterialDesignColors.pdb
 C:\Users\Printz\Desktop\CIPHR\CIPHR sv\bin\Debug\MaterialDesignThemes.Wpf.pdb
 C:\Users\Printz\Desktop\CIPHR\CIPHR sv\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\controls\ConLogMsg.g.cs
+C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\controls\serverConsole.g.cs
+C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\MainWindow.g.cs
+C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\pages\database.g.cs
+C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\pages\logs.g.cs
+C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\pages\server.g.cs
+C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\pages\settings.g.cs
+C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\App.g.cs
+C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\CIPHR server_Content.g.cs
+C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\CIPHR server_MarkupCompile.cache
+C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\CIPHR server_MarkupCompile.lref
+C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\App.baml
+C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\controls\ConLogMsg.baml
+C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\controls\serverConsole.baml
 C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\MainWindow.baml
+C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\pages\database.baml
+C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\pages\logs.baml
+C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\pages\server.baml
+C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\pages\settings.baml
 C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\CIPHR server.g.resources
 C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\CIPHR_server.Properties.Resources.resources
 C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\CIPHR server.csproj.GenerateResource.cache
@@ -19,17 +34,4 @@ C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\CIPHR server.csproj.CoreCompile
 C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\CIPHR server.csproj.CopyComplete
 C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\CIPHR server.exe
 C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\CIPHR server.pdb
-C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\App.baml
-C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\pages\console.g.cs
-C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\pages\database.g.cs
-C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\pages\logs.g.cs
-C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\pages\server.g.cs
-C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\pages\settings.g.cs
-C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\pages\console.baml
-C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\pages\database.baml
-C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\pages\logs.baml
-C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\pages\server.baml
-C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\pages\settings.baml
-C:\Users\Printz\Desktop\CIPHR\CIPHR sv\bin\Debug\ciphr_users.mdf
-C:\Users\Printz\Desktop\CIPHR\CIPHR sv\bin\Debug\ciphr_users_log.ldf
-C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\CIPHR server_Content.g.cs
+C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\CIPHR server.csprojAssemblyReference.cache

@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="CIPHR_server.controls.ConLogMsg"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CIPHR_server.controls"
+             mc:Ignorable="d" 
+            xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             Height="25" Width="1076">
+    <Grid Height="25" Width="1076">
+        <Grid HorizontalAlignment="Left" Height="25" Width="100">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                            <RotateTransform Angle="90" CenterY="0.5" CenterX="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#FF7F94EE" Offset="0.022"/>
+                    <GradientStop Color="#FF00D09C" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.Effect>
+                <BlurEffect/>
+            </Grid.Effect>
+        </Grid>
+
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="[Console Msg]" VerticalAlignment="Center" Height="19" Width="101" FontWeight="Bold" Margin="2,3,0,5" FontSize="14"/>
+
+        <Grid HorizontalAlignment="Left" Height="25" Width="800" Margin="103,0,0,0">
+            <TextBlock x:Name="Msgg" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Default ConMsg Text" VerticalAlignment="Center" Height="17" Width="780" FontFamily="Courier New" Foreground="White" Margin="10,0,0,0" FontSize="14" FontWeight="Bold"/>
+        </Grid>
+    </Grid>
+</UserControl>
