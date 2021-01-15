@@ -52,6 +52,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Dapper.2.0.78\lib\net461\Dapper.dll</HintPath>
+    </Reference>
     <Reference Include="MaterialDesignColors, Version=1.2.7.1979, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
       <HintPath>packages\MaterialDesignColors.1.2.7\lib\net45\MaterialDesignColors.dll</HintPath>
     </Reference>
@@ -59,7 +62,10 @@
       <HintPath>packages\MaterialDesignThemes.3.2.0\lib\net45\MaterialDesignThemes.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -78,7 +84,21 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="cuser.cs" />
+    <Compile Include="CUserRepo.cs" />
     <Compile Include="sv_netcmd.cs" />
+    <Compile Include="UserInfoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserInfoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UserRepository.cs" />
+    <Compile Include="user_db_mgr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user_db_mgr.Designer.cs">
+      <DependentUpon>user_db_mgr.cs</DependentUpon>
+    </Compile>
     <Page Include="controls\ConLogMsg.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -94,11 +114,6 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="ciphr_usersDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ciphr_usersDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="controls\ConLogMsg.xaml.cs">
       <DependentUpon>ConLogMsg.xaml</DependentUpon>
@@ -158,21 +173,24 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="ciphr_usersDataSet.xsc">
-      <DependentUpon>ciphr_usersDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="ciphr_usersDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>ciphr_usersDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="ciphr_usersDataSet.xss">
-      <DependentUpon>ciphr_usersDataSet.xsd</DependentUpon>
-    </None>
+    <EmbeddedResource Include="user_db_mgr.resx">
+      <DependentUpon>user_db_mgr.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="UserInfoDataSet.xsc">
+      <DependentUpon>UserInfoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UserInfoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UserInfoDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UserInfoDataSet.xss">
+      <DependentUpon>UserInfoDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

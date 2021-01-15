@@ -30,6 +30,9 @@ namespace CIPHR_server.pages
         {
             MainWindow.cprint("server launched");
 
+            sv_status.Foreground = Brushes.MediumSpringGreen;
+            sv_status.Text = "ONLINE";
+
             Thread _DT = new Thread(new ThreadStart(cserver.Start));
             _DT.SetApartmentState(ApartmentState.STA);
             _DT.Start();

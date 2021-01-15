@@ -52,10 +52,16 @@ namespace CIPHR_server
                     int bytesRec = handler.Receive(bytes);
                     data += Encoding.ASCII.GetString(bytes, 0, bytesRec);
 
+                    cPrint("incoming data package from client, data: " + data);
+                    cPrint("---------PARSED DATA------------");
                     var pkg = ParseCmd(data);
                     cPrint("NET CMD: " + pkg[0].Remove(0, 1));
                     cPrint("arg1: " + pkg[1]);
                     cPrint("arg2: " + pkg[2].Remove(pkg[2].Length-1, 1));
+
+                    if(String.Compare(pkg[0].Remove(0, 1),"REGU") == 0) {
+                        sv_netcmd.REG(pkg[1], pkg[2].Remove(pkg[2].Length - 1, 1));
+                    }
                 }
             }
             catch (Exception e)

@@ -23,6 +23,9 @@ namespace CIPHR_server.pages
         public database()
         {
             InitializeComponent();
+
+            user_db_mgr xx = new user_db_mgr();
+            xx.Show();
         }
     }
 }
