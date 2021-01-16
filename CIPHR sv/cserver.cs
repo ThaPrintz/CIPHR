@@ -31,6 +31,29 @@ namespace CIPHR_server
             return ret;
         }
 
+        public static void SendCLData(Socket cl, string str)
+        {
+            System.Net.Sockets.TcpClient clientSocket = new System.Net.Sockets.TcpClient();
+
+            try
+            {
+                clientSocket.Connect("127.0.0.1", 70);
+
+                NetworkStream serverStream = clientSocket.GetStream();
+
+                byte[] msg = Encoding.ASCII.GetBytes(str);
+
+                serverStream.Write(msg, 0, msg.Length);
+                serverStream.Flush();
+
+                serverStream.Close();
+                clientSocket.Close();
+
+            } catch( Exception e) {
+                cPrint(e.ToString());
+            }
+        }
+
         public static void Start()
         {
             byte[] bytes = new Byte[1024];
@@ -60,7 +83,11 @@ namespace CIPHR_server
                     cPrint("arg2: " + pkg[2].Remove(pkg[2].Length-1, 1));
 
                     if(String.Compare(pkg[0].Remove(0, 1),"REGU") == 0) {
-                        sv_netcmd.REG(pkg[1], pkg[2].Remove(pkg[2].Length - 1, 1));
+                        sv_netcmd.REG(handler, pkg[1], pkg[2].Remove(pkg[2].Length - 1, 1));
+                    }
+                    else if (String.Compare(pkg[0].Remove(0, 1), "AUTH") == 0)
+                    {
+                        sv_netcmd.AUTH(handler, pkg[1], pkg[2].Remove(pkg[2].Length - 1, 1));
                     }
                 }
             }

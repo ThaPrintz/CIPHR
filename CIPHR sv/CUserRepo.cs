@@ -9,5 +9,6 @@ namespace CIPHR_server
     public interface CUserRepo
     {
         Task<bool> Insert(cuser user);
+        Task<bool> Check(cuser user);
     }
 }
