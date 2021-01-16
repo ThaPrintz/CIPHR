@@ -33,22 +33,10 @@ namespace CIPHR_server
 
         public static void SendCLData(Socket cl, string str)
         {
-            System.Net.Sockets.TcpClient clientSocket = new System.Net.Sockets.TcpClient();
-
             try
             {
-                clientSocket.Connect("127.0.0.1", 70);
-
-                NetworkStream serverStream = clientSocket.GetStream();
-
-                byte[] msg = Encoding.ASCII.GetBytes(str);
-
-                serverStream.Write(msg, 0, msg.Length);
-                serverStream.Flush();
-
-                serverStream.Close();
-                clientSocket.Close();
-
+                cl.Send(Encoding.ASCII.GetBytes(str));
+                cl.Close();
             } catch( Exception e) {
                 cPrint(e.ToString());
             }

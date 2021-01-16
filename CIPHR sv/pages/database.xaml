@@ -5,6 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:CIPHR_server.pages"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms" 
              mc:Ignorable="d" 
              d:DesignHeight="510" d:DesignWidth="1076" Background="#FF1B1B1B">
     <Grid>
@@ -13,6 +14,6 @@
                 <DropShadowEffect ShadowDepth="7"/>
             </Label.Effect>
         </Label>
-            
+        
     </Grid>
 </UserControl>
