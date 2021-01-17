@@ -16,6 +16,7 @@ using System.Windows.Shapes;
 using System.Net;
 using System.Net.Sockets;
 using System.Runtime.Remoting;
+using MaterialDesignThemes.Wpf;
 
 namespace CIPHR
 {
@@ -27,6 +28,18 @@ namespace CIPHR
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        public static void PopupMsg(string str)
+        {
+            controls.PopUpMsgBox _pmsg = new controls.PopUpMsgBox();
+            _pmsg.msg.Text = str;
+            _pmsg.Show();
+        }
+
+        private void _gmd(object sender, MouseButtonEventArgs e)
+        {
+            DragMove();
         }
 
         private void Pb_Click(object sender, RoutedEventArgs e)
@@ -71,10 +84,10 @@ namespace CIPHR
                 }
                 else
                 {
-                    MessageBox.Show("Invalid username or password!");
+                    PopupMsg("Invalid username or password!");
                 }
             } catch ( Exception ex) {
-                MessageBox.Show(ex.Message);
+                PopupMsg(ex.Message);
             }
         }
     }

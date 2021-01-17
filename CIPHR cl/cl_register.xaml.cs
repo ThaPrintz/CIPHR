@@ -26,9 +26,14 @@ namespace CIPHR
             InitializeComponent();
         }
 
+        private void _gmd(object sender, MouseButtonEventArgs e)
+        {
+            DragMove();
+        }
+
         private void regscr_close(object sender, RoutedEventArgs e)
         {
-            this.Hide();
+            this.Close();
         }
 
         private void RegUser(object sender, RoutedEventArgs e)
@@ -46,14 +51,23 @@ namespace CIPHR
                 serverStream.Write(msg, 0, msg.Length);
                 serverStream.Flush();
 
+                byte[] inStream = new byte[16];
+                Int32 bytes = serverStream.Read(inStream, 0, inStream.Length);
+                string returndata = System.Text.Encoding.ASCII.GetString(inStream, 0, bytes);
+
+
                 serverStream.Close();
                 clientSocket.Close();
 
-                this.Close();
+                if (returndata == "--[REGOK]--") {
+                    this.Close();
+                } else {
+                    MainWindow.PopupMsg("Failed to register your new account, please try again.");
+                }
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MainWindow.PopupMsg(ex.Message);
             }
         }
     }

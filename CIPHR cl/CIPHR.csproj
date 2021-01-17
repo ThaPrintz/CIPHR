@@ -85,6 +85,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="controls\PopUpMsgBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="cl_main.xaml.cs">
@@ -98,6 +102,9 @@
     </Compile>
     <Compile Include="cl_register.xaml.cs">
       <DependentUpon>cl_register.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="controls\PopUpMsgBox.xaml.cs">
+      <DependentUpon>PopUpMsgBox.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -119,6 +126,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <Resource Include="Yonky Black.ttf" />
     <Resource Include="Roboto Slab.ttf" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

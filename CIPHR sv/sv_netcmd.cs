@@ -42,8 +42,12 @@ namespace CIPHR_server
 
             if (result) {
                 cPrint("new user registered with username '" + u + "' and password '" + p + "'");
+
+                cserver.SendCLData(cl, "--[REGOK]--");
             } else {
                 cPrint("Error registering user '" + u + "'");
+
+                cserver.SendCLData(cl, "--[REGNO]--");
             }
         }
     

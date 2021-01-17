@@ -1,0 +1,46 @@
+﻿<Window x:Class="CIPHR.controls.PopUpMsgBox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CIPHR.controls"
+        xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d" Width="600" Height="155" WindowStyle="None" ResizeMode="NoResize" Title="CIPHR Pop Up Msg" WindowStartupLocation="CenterScreen">
+    <Window.Effect>
+        <DropShadowEffect/>
+    </Window.Effect>
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <LinearGradientBrush.RelativeTransform>
+                <TransformGroup>
+                    <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                    <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                    <RotateTransform Angle="90" CenterY="0.5" CenterX="0.5"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </LinearGradientBrush.RelativeTransform>
+            <GradientStop Color="#FF7F94EE" Offset="0.022"/>
+            <GradientStop Color="#FF00D09C" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="115" Margin="25,20,0,0" VerticalAlignment="Top" Width="125" Source="/CIPHR;component/clg.png" Stretch="Fill"/>
+        <TextBlock x:Name="msg" HorizontalAlignment="Left" Margin="178,36,0,0" TextWrapping="Wrap" Text="Default popup msg box text" VerticalAlignment="Top" Height="67" Width="412" FontSize="22" FontFamily="/CIPHR;component/#Yonky Black" Foreground="Black"/>
+        <Button Content="Close" Click="msgboxclose" HorizontalAlignment="Left" Margin="260,108,0,0" VerticalAlignment="Top" Width="260" FontFamily="/CIPHR;component/#Roboto Slab" FontSize="22" Foreground="Black" BorderBrush="Black" BorderThickness="2" Height="34">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                            <RotateTransform Angle="90" CenterY="0.5" CenterX="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#FF7F94EE" Offset="0.022"/>
+                    <GradientStop Color="#FF00D09C" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+    </Grid>
+    </Window>
