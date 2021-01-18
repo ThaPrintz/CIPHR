@@ -1,6 +1,8 @@
-﻿using System;
+﻿using CIPHR.controls;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -30,6 +32,12 @@ namespace CIPHR
         private void _gmd(object sender, MouseButtonEventArgs e)
         {
             DragMove();
+        }
+
+        private void RegSvM(object sender, RoutedEventArgs e)
+        {
+            RegNewSv _sv = new RegNewSv();
+            _sv.Show();
         }
     }
 }

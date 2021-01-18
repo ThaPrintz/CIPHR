@@ -38,6 +38,13 @@ namespace CIPHR
 
         private void RegUser(object sender, RoutedEventArgs e)
         {
+            if(pwordt.Password != pword.Password)
+            {
+                MainWindow.PopupMsg("Password and password confirmation values do not match!");
+
+                return;
+            }
+
             System.Net.Sockets.TcpClient clientSocket = new System.Net.Sockets.TcpClient();
 
             try

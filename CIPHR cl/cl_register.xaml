@@ -53,7 +53,7 @@
                         </LinearGradientBrush>
                     </TextBox.Foreground>
                 </TextBox>
-                <PasswordBox x:Name="pword" Style="{StaticResource MaterialDesignOutlinedPasswordFieldPasswordBox}" VerticalAlignment="Center" IsEnabled="{Binding IsChecked, ElementName=MaterialDesignOutlinedPasswordFieldPasswordBoxEnabledComboBox}" Width="350" Background="White" Margin="160,8,40,115" BorderThickness="0,0,0,1" FontSize="18" FontFamily="/CIPHR;component/#Roboto Slab" FontWeight="Bold" Height="42" CaretBrush="#FF00D09C" >
+                <PasswordBox x:Name="pword" Style="{StaticResource MaterialDesignOutlinedPasswordFieldPasswordBox}" VerticalAlignment="Center" IsEnabled="{Binding IsChecked, ElementName=MaterialDesignOutlinedPasswordFieldPasswordBoxEnabledComboBox}" Width="350" Background="White" Margin="160,8,40,115" BorderThickness="0,0,0,1" FontSize="18" FontFamily="Segoe UI Black" FontWeight="Bold" Height="42" CaretBrush="#FF00D09C" >
                     <PasswordBox.Foreground>
                         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                             <LinearGradientBrush.RelativeTransform>
@@ -69,7 +69,7 @@
                         </LinearGradientBrush>
                     </PasswordBox.Foreground>
                 </PasswordBox>
-                <PasswordBox x:Name="pwordt" Style="{StaticResource MaterialDesignOutlinedPasswordFieldPasswordBox}" VerticalAlignment="Center" IsEnabled="{Binding IsChecked, ElementName=MaterialDesignOutlinedPasswordFieldPasswordBoxEnabledComboBox}" Width="350" Background="White" Margin="160,-172,40,0" BorderThickness="0,0,0,1" FontSize="18" FontFamily="/CIPHR;component/#Roboto Slab" FontWeight="Bold" Height="42" CaretBrush="#FF00D09C" BorderBrush="{x:Null}" >
+                <PasswordBox x:Name="pwordt" Style="{StaticResource MaterialDesignOutlinedPasswordFieldPasswordBox}" VerticalAlignment="Center" IsEnabled="{Binding IsChecked, ElementName=MaterialDesignOutlinedPasswordFieldPasswordBoxEnabledComboBox}" Width="350" Background="White" Margin="160,-172,40,0" BorderThickness="0,0,0,1" FontSize="18" FontFamily="Segoe UI Black" FontWeight="Bold" Height="42" CaretBrush="#FF00D09C" BorderBrush="{x:Null}" >
                     <PasswordBox.Foreground>
                         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                             <LinearGradientBrush.RelativeTransform>

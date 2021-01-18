@@ -16,6 +16,7 @@
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -28,7 +29,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -86,15 +86,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="cuser.cs" />
-    <Compile Include="CUserRepo.cs" />
+    <Compile Include="SV Interface\CServerRepo.cs" />
+    <Compile Include="SV Interface\csv_struct.cs" />
+    <Compile Include="SV Interface\ServerRepository.cs" />
+    <Compile Include="User Management\cuser.cs" />
+    <Compile Include="User Management\CUserRepo.cs" />
     <Compile Include="sv_netcmd.cs" />
     <Compile Include="UserInfoDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>UserInfoDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="UserRepository.cs" />
+    <Compile Include="User Management\UserRepository.cs" />
     <Compile Include="user_db_mgr.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -202,6 +205,13 @@
     <Resource Include="favicon.ico" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ciphr_servers.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ciphr_servers_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>ciphr_servers.mdf</DependentUpon>
+    </Content>
     <Content Include="ciphr_users.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

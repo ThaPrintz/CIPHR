@@ -8,6 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("ciphr_servers.mdf")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("ciphr_servers_log.ldf")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("ciphr_users.mdf")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("ciphr_users_log.ldf")]
 

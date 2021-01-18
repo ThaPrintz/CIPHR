@@ -55,8 +55,7 @@ namespace CIPHR_server
                 listener.Bind(localEndPoint);
                 listener.Listen(20);
 
-                while (true)
-                {
+                while (true) {
                     Socket handler = listener.Accept();
                     data = null;
 
@@ -72,16 +71,14 @@ namespace CIPHR_server
 
                     if(String.Compare(pkg[0].Remove(0, 1),"REGU") == 0) {
                         sv_netcmd.REG(handler, pkg[1], pkg[2].Remove(pkg[2].Length - 1, 1));
-                    }
-                    else if (String.Compare(pkg[0].Remove(0, 1), "AUTH") == 0)
-                    {
+                    } else if (String.Compare(pkg[0].Remove(0, 1), "AUTH") == 0) {
+                        sv_netcmd.AUTH(handler, pkg[1], pkg[2].Remove(pkg[2].Length - 1, 1));
+                    } else if (String.Compare(pkg[0].Remove(0, 1), "REGSV") == 0) {
                         sv_netcmd.AUTH(handler, pkg[1], pkg[2].Remove(pkg[2].Length - 1, 1));
                     }
                 }
-            }
-            catch (Exception e)
-            {
-               
+            } catch (Exception e) {
+                cPrint(e.ToString());
             }
         }
     }

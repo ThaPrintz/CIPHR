@@ -11,6 +11,20 @@
         <DropShadowEffect/>
     </Window.Effect>
     <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <LinearGradientBrush.RelativeTransform>
+                    <TransformGroup>
+                        <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                        <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                        <RotateTransform Angle="90" CenterY="0.5" CenterX="0.5"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </LinearGradientBrush.RelativeTransform>
+                <GradientStop Color="#FF7F94EE" Offset="0.022"/>
+                <GradientStop Color="#FF00D09C" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
         <md:ColorZone MouseDown="_gmd" Padding="16" CornerRadius="3" Margin="2,2,2,0" Height="75" Background="#FF2C2C2C" BorderBrush="Black" BorderThickness="2">
             <md:ColorZone.Effect>
                 <DropShadowEffect/>
@@ -60,7 +74,15 @@
         </Button>
 
         <Grid VerticalAlignment="Top" HorizontalAlignment="Left" Width="638" Height="60" Margin="100,7,0,0" >
-            <Button Height="60" Width="70" HorizontalAlignment="Left" BorderBrush="White" BorderThickness="2" Margin="38,0,0,0">
+            <Button Height="Auto" Margin="25,0,0,0" Background="{x:Null}" BorderBrush="{x:Null}" Width="80" HorizontalAlignment="Left">
+                <md:PackIcon Kind="ServerPlus" Width="75" Height="60" Margin="-15,0,0,0" Foreground="White" BorderThickness="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" >
+                    <md:PackIcon.Effect>
+                        <DropShadowEffect/>
+                    </md:PackIcon.Effect>
+                </md:PackIcon>
+            </Button>
+            
+            <Button Height="60" Width="70" HorizontalAlignment="Left" BorderBrush="White" BorderThickness="2" Margin="115,0,0,0">
                 <Button.Effect>
                     <DropShadowEffect/>
                 </Button.Effect>
