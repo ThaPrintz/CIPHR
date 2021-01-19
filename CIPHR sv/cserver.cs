@@ -74,7 +74,7 @@ namespace CIPHR_server
                     } else if (String.Compare(pkg[0].Remove(0, 1), "AUTH") == 0) {
                         sv_netcmd.AUTH(handler, pkg[1], pkg[2].Remove(pkg[2].Length - 1, 1));
                     } else if (String.Compare(pkg[0].Remove(0, 1), "REGSV") == 0) {
-                        sv_netcmd.AUTH(handler, pkg[1], pkg[2].Remove(pkg[2].Length - 1, 1));
+                        sv_netcmd.CREATE(handler, pkg[1]);
                     }
                 }
             } catch (Exception e) {

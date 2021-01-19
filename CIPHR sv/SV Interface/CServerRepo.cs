@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CIPHR_server.SV_Interface
 {
-    public interface CServerRepo
+    public interface ICServerRepo
     {
         Task<bool> Create(csv_struct sv);
         Task<bool> Delete(csv_struct sv);

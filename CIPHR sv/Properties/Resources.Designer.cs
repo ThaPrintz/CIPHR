@@ -61,6 +61,32 @@ namespace CIPHR_server.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to CREATE TABLE @Sv_name
+        ///(
+        ///    [svname] NVARCHAR(50) NOT NULL PRIMARY KEY, 
+        ///    [users] NVARCHAR(MAX) NOT NULL, 
+        ///    [tchan] NVARCHAR(MAX) NOT NULL, 
+        ///    [vchan] NVARCHAR(MAX) NOT NULL, 
+        ///    [ranks] NVARCHAR(MAX) NOT NULL, 
+        ///    [owner] NVARCHAR(50) NOT NULL
+        ///).
+        /// </summary>
+        internal static string CreateSVTable {
+            get {
+                return ResourceManager.GetString("CreateSVTable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DROP TABLE IF EXISTS @svname.
+        /// </summary>
+        internal static string DeleteSVTable {
+            get {
+                return ResourceManager.GetString("DeleteSVTable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to if not exists(select username from Users where username=@Username)
         ///begin
         ///    insert into Users(username, password)

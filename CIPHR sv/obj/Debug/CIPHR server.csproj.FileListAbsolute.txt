@@ -1,3 +1,5 @@
+C:\Users\Printz\Desktop\CIPHR\CIPHR sv\bin\Debug\ciphr_servers.mdf
+C:\Users\Printz\Desktop\CIPHR\CIPHR sv\bin\Debug\ciphr_servers_log.ldf
 C:\Users\Printz\Desktop\CIPHR\CIPHR sv\bin\Debug\ciphr_users.mdf
 C:\Users\Printz\Desktop\CIPHR\CIPHR sv\bin\Debug\ciphr_users_log.ldf
 C:\Users\Printz\Desktop\CIPHR\CIPHR sv\bin\Debug\CIPHR server.exe.config
@@ -32,9 +34,9 @@ C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\pages\server.baml
 C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\pages\settings.baml
 C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\CIPHR server.g.resources
 C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\CIPHR_server.Properties.Resources.resources
+C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\CIPHR_server.user_db_mgr.resources
 C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\CIPHR server.csproj.GenerateResource.cache
 C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\CIPHR server.csproj.CoreCompileInputs.cache
 C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\CIPHR server.csproj.CopyComplete
 C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\CIPHR server.exe
 C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\CIPHR server.pdb
-C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\CIPHR_server.user_db_mgr.resources

@@ -74,7 +74,7 @@
         </Button>
 
         <Grid VerticalAlignment="Top" HorizontalAlignment="Left" Width="638" Height="60" Margin="100,7,0,0" >
-            <Button Height="Auto" Margin="25,0,0,0" Background="{x:Null}" BorderBrush="{x:Null}" Width="80" HorizontalAlignment="Left">
+            <Button Height="Auto" Margin="25,0,0,0" Background="{x:Null}" BorderBrush="{x:Null}" Click="RegSvM" Width="80" HorizontalAlignment="Left">
                 <md:PackIcon Kind="ServerPlus" Width="75" Height="60" Margin="-15,0,0,0" Foreground="White" BorderThickness="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" >
                     <md:PackIcon.Effect>
                         <DropShadowEffect/>

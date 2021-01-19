@@ -8,7 +8,7 @@ namespace CIPHR_server
 {
     public class csv_struct
     {
-        public string sv_name { get; set; }
+        public string Sv_name { get; set; }
         public string users { get; set; }
         public string tchan { get; set; }
         public string vchan { get; set; }

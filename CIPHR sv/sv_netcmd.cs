@@ -1,4 +1,5 @@
-﻿using CIPHR_server.UserInfoDataSetTableAdapters;
+﻿using CIPHR_server.SV_Interface;
+using CIPHR_server.UserInfoDataSetTableAdapters;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -50,6 +51,21 @@ namespace CIPHR_server
                 cserver.SendCLData(cl, "--[REGNO]--");
             }
         }
-    
+
+        public static async void CREATE(Socket cl, string name)
+        {
+            ICServerRepo repository = new ServerRepository();
+            bool result = await repository.Create(new csv_struct() { Sv_name = name });
+
+            if (result) {
+                cPrint("new server registered with name '" + name + "'");
+
+                cserver.SendCLData(cl, "--[REGSVOK]--");
+            } else {
+                cPrint("Error registering server '" + name + "'");
+
+                cserver.SendCLData(cl, "--[REGSVNO]--");
+            }
+        }
     }
 }

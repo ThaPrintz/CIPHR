@@ -11,21 +11,31 @@
     </Window.Effect>
 
     <StackPanel Background="WhiteSmoke">
-        <Grid Height="50">
+        <Grid Height="60">
 
             <StackPanel MouseDown="_gmd" Orientation="Horizontal" VerticalAlignment="Top" Margin="0">
-                <Image HorizontalAlignment="Left" Height="50" Margin="0,0,0,0" VerticalAlignment="Top" Width="219" Source="clogoo.png"/>
-                <Button Uid="0" Width="150" Content="SERVER" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Click="Button_Click" FontFamily="Segoe UI Black" FontSize="18" FontWeight="Normal"/>
-                <Button Uid="1" Width="150" Content="SETTINGS" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Click="Button_Click" FontFamily="Segoe UI Black" FontSize="18"/>
-                <Button Uid="2" Width="150" Content="CONSOLE" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Click="Button_Click" FontFamily="Segoe UI Black" FontSize="18"/>
-                <Button Uid="3" Width="150" Content="LOGS" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Click="Button_Click" FontSize="18" FontFamily="Segoe UI Black"/>
-                <Button Uid="4" Width="150" Content="DATABASE" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Click="Button_Click" FontSize="18" FontFamily="Segoe UI Black"/>
-                <Button Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Center" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" HorizontalAlignment="Right" Margin="60,0,0,0">
+                <Image HorizontalAlignment="Left" Height="60" Margin="0,0,0,0" VerticalAlignment="Top" Width="231" Source="clogoo.png" Stretch="Fill"/>
+                <Button Uid="0" Width="160" Height="60" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Click="Button_Click" FontFamily="Segoe UI Black" FontSize="18" FontWeight="Normal" Padding="0">
+                    <StackPanel Height="60" Width="160" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <materialDesign:PackIcon Kind="Server" Height="45" Width="45" Margin="0,0,0,0" />
+                        <TextBlock Text="SERVER" FontSize="21" Margin="2,-11,0,0" FontFamily="Segoe UI Black" Foreground="Black" FontWeight="Bold" Height="25" Width="101"/>
+                    </StackPanel>
+                </Button>
+                <Button Uid="1" Width="160" Content="SETTINGS" Height="60" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Click="Button_Click" FontFamily="Segoe UI Black" FontSize="18"/>
+                <Button Uid="2" Width="160" Height="60" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Click="Button_Click" FontFamily="Segoe UI Black" FontSize="18" Padding="0">
+                    <StackPanel Height="60" Width="160" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <materialDesign:PackIcon Kind="Powershell" Height="50" Width="50" Margin="0,-3,0,0" />
+                        <TextBlock Text="CONSOLE" FontSize="21" Margin="2,-11,0,0" FontFamily="Segoe UI Black" Foreground="Black" FontWeight="Bold" Height="25" Width="101"/>
+                    </StackPanel>
+                </Button>
+                <Button Uid="3" Width="160" Content="LOGS" Height="60" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Click="Button_Click" FontSize="18" FontFamily="Segoe UI Black"/>
+                <Button Uid="4" Width="160" Content="DATABASE" Height="60" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Click="Button_Click" FontSize="18" FontFamily="Segoe UI Black"/>
+                <Button Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Center" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" HorizontalAlignment="Right" Margin="4,0,0,0">
                     <materialDesign:PackIcon Kind="Power" Foreground="Red" Width="45" Height="45" HorizontalAlignment="Center" VerticalAlignment="Center" />
                 </Button>
             </StackPanel>
-            
-            <Grid x:Name="GridCursor" Width="148" Height="11" HorizontalAlignment="Left" Margin="221, 35, 0, 0">
+
+            <Grid x:Name="GridCursor" Width="160" Height="11" HorizontalAlignment="Left" Margin="231, 45, 0, 0">
                 <Grid.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <LinearGradientBrush.RelativeTransform>
@@ -44,7 +54,7 @@
                     <BlurEffect Radius="3"/>
                 </Grid.Effect>
             </Grid>
- 
+
         </Grid>
 
         <Grid x:Name="GridMain" Height="510" Background="#FF191919" Opacity="0.9">

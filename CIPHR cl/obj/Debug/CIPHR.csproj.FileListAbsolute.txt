@@ -27,3 +27,5 @@ C:\Users\Printz\Desktop\CIPHR\CIPHR cl\obj\Debug\cl_main.baml
 C:\Users\Printz\Desktop\CIPHR\CIPHR cl\obj\Debug\CIPHR.cl_main_ctxm.resources
 C:\Users\Printz\Desktop\CIPHR\CIPHR cl\obj\Debug\controls\PopUpMsgBox.g.cs
 C:\Users\Printz\Desktop\CIPHR\CIPHR cl\obj\Debug\controls\PopUpMsgBox.baml
+C:\Users\Printz\Desktop\CIPHR\CIPHR cl\obj\Debug\controls\RegNewSv.g.cs
+C:\Users\Printz\Desktop\CIPHR\CIPHR cl\obj\Debug\controls\RegNewSv.baml

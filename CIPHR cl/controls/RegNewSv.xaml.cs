@@ -55,7 +55,7 @@ namespace CIPHR.controls
                 }
                 else
                 {
-                    MainWindow.PopupMsg("Failed to register your new account, please try again.");
+                    MainWindow.PopupMsg("Failed to register new server, please try again.");
                 }
             }
             catch (Exception ex)

@@ -46,10 +46,24 @@
             </StackPanel>
         </materialDesign:Card>
 
-        <Button HorizontalAlignment="Left" VerticalAlignment="Center" Width="175" Click="Startsv" Background="{x:Null}" Height="55" Margin="275,0,0,100" BorderThickness="3" Foreground="White">
+        <Button HorizontalAlignment="Left" VerticalAlignment="Center" Width="175" Click="Startsv" Height="55" Margin="275,0,0,100" BorderThickness="3" Foreground="Black">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                            <RotateTransform Angle="90" CenterY="0.5" CenterX="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#FF7F94EE" Offset="0.022"/>
+                    <GradientStop Color="#FF00D09C" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
             <Button.BorderBrush>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF7F94EE" Offset="0"/>
@@ -60,11 +74,25 @@
 
             <StackPanel Height="55" Width="175" Margin="-15,-4,0,0">
                 <materialDesign:PackIcon Kind="PowerSettings" Height="45" Width="45" Margin="2,3,0,0" VerticalAlignment="Center"/>
-                <TextBlock Text="Start server" FontSize="19" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="28,-42,0,0" FontFamily="Segoe UI Black" Foreground="White" FontWeight="Bold"/>
+                <TextBlock Text="Start server" FontSize="19" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="28,-42,0,0" FontFamily="Segoe UI Black" Foreground="Black" FontWeight="Bold"/>
             </StackPanel>
         </Button>
 
-        <Button HorizontalAlignment="Center" VerticalAlignment="Center" Width="175" Background="{x:Null}" Height="55" Margin="350,0,0,100" BorderThickness="3" Foreground="White">
+        <Button HorizontalAlignment="Center" VerticalAlignment="Center" Width="175" Height="55" Margin="350,0,0,100" BorderThickness="3" Foreground="Black">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                            <RotateTransform Angle="90" CenterY="0.5" CenterX="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#FF7F94EE" Offset="0.022"/>
+                    <GradientStop Color="#FF00D09C" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
@@ -74,10 +102,10 @@
                     <GradientStop Color="#FF00D09C" Offset="1"/>
                 </LinearGradientBrush>
             </Button.BorderBrush>
-            
+
             <StackPanel Height="55" Width="175" Margin="-15,-4,0,0">
                 <materialDesign:PackIcon Kind="PowerOff" Height="45" Width="45" Margin="2,4,0,0" VerticalAlignment="Center"/>
-                <TextBlock Text="Stop server" FontSize="19" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="28,-43,0,0" FontFamily="Segoe UI Black" Foreground="White" FontWeight="Bold"/>
+                <TextBlock Text="Stop server" FontSize="19" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="28,-43,0,0" FontFamily="Segoe UI Black" Foreground="Black" FontWeight="Bold"/>
             </StackPanel>
         </Button>
     </Grid>
