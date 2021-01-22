@@ -21,7 +21,13 @@
                         <TextBlock Text="SERVER" FontSize="21" Margin="2,-11,0,0" FontFamily="Segoe UI Black" Foreground="Black" FontWeight="Bold" Height="25" Width="101"/>
                     </StackPanel>
                 </Button>
-                <Button Uid="1" Width="160" Content="SETTINGS" Height="60" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Click="Button_Click" FontFamily="Segoe UI Black" FontSize="18"/>
+                <Button Uid="1" Width="160" Height="60" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Click="Button_Click" FontFamily="Segoe UI Black" FontSize="18" Padding="0">
+                    <StackPanel Height="60" Width="160" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <materialDesign:PackIcon Kind="Settings" Height="45" Width="45" Margin="0,0,0,0" />
+                        <TextBlock Text="SETTINGS" FontSize="21" Margin="2,-11,0,0" FontFamily="Segoe UI Black" Foreground="Black" FontWeight="Bold" Height="25" Width="101"/>
+                    </StackPanel>
+                </Button>
+                
                 <Button Uid="2" Width="160" Height="60" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Click="Button_Click" FontFamily="Segoe UI Black" FontSize="18" Padding="0">
                     <StackPanel Height="60" Width="160" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
                         <materialDesign:PackIcon Kind="Powershell" Height="50" Width="50" Margin="0,-3,0,0" />

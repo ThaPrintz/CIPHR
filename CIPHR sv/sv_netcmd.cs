@@ -52,17 +52,17 @@ namespace CIPHR_server
             }
         }
 
-        public static async void CREATE(Socket cl, string name)
+        public static async void CREATE(Socket cl, string svid, string ownerid)
         {
             ICServerRepo repository = new ServerRepository();
-            bool result = await repository.Create(new csv_struct() { Sv_name = name });
+            bool result = await repository.Create(new csv_struct() { Sv_name = svid, owner = ownerid, ranks = "owner;user;guest", tchan = "general;", vchan = "general;AFK", users = ownerid });
 
             if (result) {
-                cPrint("new server registered with name '" + name + "'");
+                cPrint("new server registered with name '" + svid + "'");
 
                 cserver.SendCLData(cl, "--[REGSVOK]--");
             } else {
-                cPrint("Error registering server '" + name + "'");
+                cPrint("Error registering server '" + svid + "'");
 
                 cserver.SendCLData(cl, "--[REGSVNO]--");
             }

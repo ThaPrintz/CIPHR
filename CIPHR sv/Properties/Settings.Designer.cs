@@ -33,5 +33,16 @@ namespace CIPHR_server.Properties {
                 return ((string)(this["ciphr_usersConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\ciphr_servers" +
+            ".mdf;Integrated Security=True")]
+        public string ciphr_serversConnectionString {
+            get {
+                return ((string)(this["ciphr_serversConnectionString"]));
+            }
+        }
     }
 }

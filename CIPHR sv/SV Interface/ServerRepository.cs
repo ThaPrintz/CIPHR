@@ -25,9 +25,7 @@ namespace CIPHR_server.SV_Interface
         {
             using (IDbConnection db = new SqlConnection(cnstr))
             {
-                string sqlvar = "CREATE TABLE " + sv.Sv_name + " ( [svname] NVARCHAR(50) NOT NULL PRIMARY KEY, [users] NVARCHAR(MAX) NOT NULL, [tchan] NVARCHAR(MAX) NOT NULL, [vchan] NVARCHAR(MAX) NOT NULL, [ranks] NVARCHAR(MAX) NOT NULL, [owner] NVARCHAR(50) NOT NULL)";
-
-                var result = await db.ExecuteAsync(sqlvar);
+                var result = await db.ExecuteAsync(CIPHR_server.Properties.Resources.InsertServer, new { Sv_name = sv.Sv_name, Ownername = sv.owner, tch = sv.tchan, vch = sv.vchan, mbrs = sv.users, rnks = sv.ranks });
 
                 return result > 0;
             }
@@ -38,13 +36,14 @@ namespace CIPHR_server.SV_Interface
             using (IDbConnection db = new SqlConnection(cnstr))
             {
                 var result = await db.ExecuteAsync(CIPHR_server.Properties.Resources.DeleteSVTable, new { Sv_name = sv.Sv_name });
-
+  
                 return result > 0;
             }
         }
 
         public async Task<bool> Validate(csv_struct sv)
         {
+            
             /*
             using (SqlConnection db = new SqlConnection(cnstr))
             {

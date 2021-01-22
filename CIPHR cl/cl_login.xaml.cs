@@ -30,6 +30,8 @@ namespace CIPHR
             InitializeComponent();
         }
 
+        public static string Uname { get; set; }
+
         public static void PopupMsg(string str)
         {
             controls.PopUpMsgBox _pmsg = new controls.PopUpMsgBox();
@@ -75,15 +77,14 @@ namespace CIPHR
                 serverStream.Close();
                 clientSocket.Close();
 
-                if (returndata == "--[AUTHOK]--")
-                {
+                if (returndata == "--[AUTHOK]--") {
+                    Uname = uname.Text;
+
                     this.Hide();
                     var mainapp = new cl_main();
                     mainapp.Closed += (s, args) => this.Close();
                     mainapp.Show();
-                }
-                else
-                {
+                } else {
                     PopupMsg("Invalid username or password!");
                 }
             } catch ( Exception ex) {

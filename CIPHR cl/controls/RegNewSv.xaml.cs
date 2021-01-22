@@ -36,7 +36,7 @@ namespace CIPHR.controls
 
                 NetworkStream serverStream = clientSocket.GetStream();
 
-                byte[] msg = Encoding.ASCII.GetBytes(String.Concat("[REGSV|" + svname.Text + ":" + "newserv" + "]"));
+                byte[] msg = Encoding.ASCII.GetBytes(String.Concat("[REGSV|" + svname.Text + ":" + MainWindow.Uname + "]"));
 
                 serverStream.Write(msg, 0, msg.Length);
                 serverStream.Flush();
@@ -45,21 +45,15 @@ namespace CIPHR.controls
                 Int32 bytes = serverStream.Read(inStream, 0, inStream.Length);
                 string returndata = System.Text.Encoding.ASCII.GetString(inStream, 0, bytes);
 
-
                 serverStream.Close();
                 clientSocket.Close();
 
-                if (returndata == "--[REGSVOK]--")
-                {
+                if (returndata == "--[REGSVOK]--") {
                     this.Close();
-                }
-                else
-                {
+                } else {
                     MainWindow.PopupMsg("Failed to register new server, please try again.");
                 }
-            }
-            catch (Exception ex)
-            {
+            } catch (Exception ex) {
                 MainWindow.PopupMsg(ex.Message);
             }
         }

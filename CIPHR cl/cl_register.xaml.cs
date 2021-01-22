@@ -38,8 +38,7 @@ namespace CIPHR
 
         private void RegUser(object sender, RoutedEventArgs e)
         {
-            if(pwordt.Password != pword.Password)
-            {
+            if(pwordt.Password != pword.Password) {
                 MainWindow.PopupMsg("Password and password confirmation values do not match!");
 
                 return;
@@ -71,9 +70,7 @@ namespace CIPHR
                 } else {
                     MainWindow.PopupMsg("Failed to register your new account, please try again.");
                 }
-            }
-            catch (Exception ex)
-            {
+            } catch (Exception ex) {
                 MainWindow.PopupMsg(ex.Message);
             }
         }

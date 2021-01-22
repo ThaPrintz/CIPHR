@@ -117,19 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="CreateSVTable" xml:space="preserve">
-    <value>CREATE TABLE @Sv_name
-(
-    [svname] NVARCHAR(50) NOT NULL PRIMARY KEY, 
-    [users] NVARCHAR(MAX) NOT NULL, 
-    [tchan] NVARCHAR(MAX) NOT NULL, 
-    [vchan] NVARCHAR(MAX) NOT NULL, 
-    [ranks] NVARCHAR(MAX) NOT NULL, 
-    [owner] NVARCHAR(50) NOT NULL
-)</value>
-  </data>
   <data name="DeleteSVTable" xml:space="preserve">
     <value>DROP TABLE IF EXISTS @svname</value>
+  </data>
+  <data name="InsertServer" xml:space="preserve">
+    <value>if not exists(select serverid from cServers where serverid=@Sv_name)
+begin
+    insert into cServers(serverid, ownerid, textch, voicech, members, ranks)
+    values(@Sv_name, @Ownername, @tch, @vch, @mbrs, @rnks)
+end</value>
   </data>
   <data name="InsertUser" xml:space="preserve">
     <value>if not exists(select username from Users where username=@Username)

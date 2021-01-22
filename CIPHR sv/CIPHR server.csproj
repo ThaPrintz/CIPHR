@@ -86,6 +86,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ciphr_serversDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ciphr_serversDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="SV Interface\CServerRepo.cs" />
     <Compile Include="SV Interface\csv_struct.cs" />
     <Compile Include="SV Interface\ServerRepository.cs" />
@@ -98,12 +103,6 @@
       <DependentUpon>UserInfoDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="User Management\UserRepository.cs" />
-    <Compile Include="user_db_mgr.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="user_db_mgr.Designer.cs">
-      <DependentUpon>user_db_mgr.cs</DependentUpon>
-    </Compile>
     <Page Include="controls\ConLogMsg.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -178,9 +177,17 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="user_db_mgr.resx">
-      <DependentUpon>user_db_mgr.cs</DependentUpon>
-    </EmbeddedResource>
+    <None Include="ciphr_serversDataSet.xsc">
+      <DependentUpon>ciphr_serversDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ciphr_serversDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ciphr_serversDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ciphr_serversDataSet.xss">
+      <DependentUpon>ciphr_serversDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
