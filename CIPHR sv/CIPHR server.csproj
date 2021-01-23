@@ -91,11 +91,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ciphr_serversDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="dbmgr.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="dbmgr.Designer.cs">
-      <DependentUpon>dbmgr.cs</DependentUpon>
+    <Compile Include="ciphr_usersDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ciphr_usersDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="SV Interface\CServerRepo.cs" />
     <Compile Include="SV Interface\csv_struct.cs" />
@@ -103,11 +102,6 @@
     <Compile Include="User Management\cuser.cs" />
     <Compile Include="User Management\CUserRepo.cs" />
     <Compile Include="sv_netcmd.cs" />
-    <Compile Include="UserInfoDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>UserInfoDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="User Management\UserRepository.cs" />
     <Page Include="controls\ConLogMsg.xaml">
       <SubType>Designer</SubType>
@@ -179,9 +173,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="dbmgr.resx">
-      <DependentUpon>dbmgr.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -198,21 +189,21 @@
     <None Include="ciphr_serversDataSet.xss">
       <DependentUpon>ciphr_serversDataSet.xsd</DependentUpon>
     </None>
+    <None Include="ciphr_usersDataSet.xsc">
+      <DependentUpon>ciphr_usersDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ciphr_usersDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ciphr_usersDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ciphr_usersDataSet.xss">
+      <DependentUpon>ciphr_usersDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="UserInfoDataSet.xsc">
-      <DependentUpon>UserInfoDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="UserInfoDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>UserInfoDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="UserInfoDataSet.xss">
-      <DependentUpon>UserInfoDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

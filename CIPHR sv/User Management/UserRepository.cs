@@ -11,7 +11,7 @@ using System.Windows.Navigation;
 
 namespace CIPHR_server
 {
-    public class UserRepository : CUserRepo
+    public class UserRepository : ICUserRepo
     {
         private string cnstr = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\ciphr_users.mdf;Integrated Security=True";
 
@@ -27,7 +27,7 @@ namespace CIPHR_server
         {
             using(IDbConnection db = new SqlConnection(cnstr))
             {
-                var result = await db.ExecuteAsync(CIPHR_server.Properties.Resources.InsertUser, new { Username = user.Username, Password = user.Password });
+                var result = await db.ExecuteAsync(CIPHR_server.Properties.Resources.InsertUser, new { Username = user.Username, Password = user.Password, Email = user.Emailadd, Phonenum = user.Phonenumber });
                 
                 return result > 0;
             }

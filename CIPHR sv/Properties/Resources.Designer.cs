@@ -83,10 +83,10 @@ namespace CIPHR_server.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to if not exists(select username from Users where username=@Username)
+        ///   Looks up a localized string similar to if not exists(select username from cUsers where username=@Username)
         ///begin
-        ///    insert into Users(username, password)
-        ///    values(@Username, @Password)
+        ///    insert into cUsers(username, password, emailadd, phonenumber)
+        ///    values(@Username, @Password, @Email, @Phonenum)
         ///end.
         /// </summary>
         internal static string InsertUser {

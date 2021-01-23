@@ -1,5 +1,4 @@
 ﻿using CIPHR_server.SV_Interface;
-using CIPHR_server.UserInfoDataSetTableAdapters;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -22,7 +21,7 @@ namespace CIPHR_server
 
         public static async void AUTH(Socket cl, string u, string p)
         {
-            CUserRepo repository = new UserRepository();
+            ICUserRepo repository = new UserRepository();
             bool result = await repository.Check(new cuser() { Username = u, Password = p, _clhandle = cl });
 
             if (result) {
@@ -38,7 +37,7 @@ namespace CIPHR_server
 
         public static async void REG(Socket cl, string u, string p)
         {
-            CUserRepo repository = new UserRepository();
+            ICUserRepo repository = new UserRepository();
             bool result = await repository.Insert(new cuser() { Username = u, Password = p, _clhandle = cl });
 
             if (result) {

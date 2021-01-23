@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CIPHR_server
 {
-    public interface CUserRepo
+    public interface ICUserRepo
     {
         Task<bool> Insert(cuser user);
         Task<bool> Check(cuser user);

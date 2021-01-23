@@ -52,7 +52,7 @@ namespace CIPHR
 
                 NetworkStream serverStream = clientSocket.GetStream();
 
-                byte[] msg = Encoding.ASCII.GetBytes(String.Concat("[REGU|" + uname.Text + ":" + pword.Password + "]"));
+                byte[] msg = Encoding.ASCII.GetBytes(String.Concat("[REGU|" + uname.Text + ":" + pword.Password + ":" + email.Text + ":" + phone.Text + "]"));
 
                 serverStream.Write(msg, 0, msg.Length);
                 serverStream.Flush();
