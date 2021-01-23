@@ -26,7 +26,13 @@ namespace CIPHR_server
             var cmd = ccmd.Split('|');
             var data = cmd[1].Split(':');
 
-            string[] ret = {cmd[0], data[0], data[1], data[2], data[3] };
+            string[] ret;
+
+            if (cmd[0] == "REGU") {
+               ret = { cmd[0], data[0], data[1], data[2], data[3] };
+            } else {
+               ret = { cmd[0], data[0], data[1] };
+            }
 
             return ret;
         }
@@ -74,7 +80,7 @@ namespace CIPHR_server
                     }
 
                     if(String.Compare(pkg[0].Remove(0, 1),"REGU") == 0) {
-                        //sv_netcmd.REG(handler, pkg[1], pkg[2].Remove(pkg[2].Length - 1, 1));
+                        sv_netcmd.REG(handler, pkg[1], pkg[2], pkg[3], );
                     } else if (String.Compare(pkg[0].Remove(0, 1), "AUTH") == 0) {
                         sv_netcmd.AUTH(handler, pkg[1], pkg[2].Remove(pkg[2].Length - 1, 1));
                     } else if (String.Compare(pkg[0].Remove(0, 1), "REGSV") == 0) {
