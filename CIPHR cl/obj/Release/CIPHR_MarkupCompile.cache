@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-C:\Users\Austin\CIPHR\CIPHR cl\obj\Debug\
+C:\Users\Austin\CIPHR\CIPHR cl\obj\Release\
 CIPHR
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Users\Austin\CIPHR\CIPHR cl\App.xaml
 51214337585
 

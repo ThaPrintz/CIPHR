@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-C:\Users\Austin\CIPHR\CIPHR sv\obj\Debug\
+C:\Users\Austin\CIPHR\CIPHR sv\obj\Release\
 CIPHR_server
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Users\Austin\CIPHR\CIPHR sv\App.xaml
 71230867076
 4-889856527
