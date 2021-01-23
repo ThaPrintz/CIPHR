@@ -34,8 +34,18 @@
                         <TextBlock Text="CONSOLE" FontSize="21" Margin="2,-11,0,0" FontFamily="Segoe UI Black" Foreground="Black" FontWeight="Bold" Height="25" Width="101"/>
                     </StackPanel>
                 </Button>
-                <Button Uid="3" Width="160" Content="LOGS" Height="60" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Click="Button_Click" FontSize="18" FontFamily="Segoe UI Black"/>
-                <Button Uid="4" Width="160" Content="DATABASE" Height="60" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Click="Button_Click" FontSize="18" FontFamily="Segoe UI Black"/>
+                <Button Uid="3" Width="160" Height="60" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Click="Button_Click" FontSize="18" FontFamily="Segoe UI Black">
+                    <StackPanel Height="60" Width="160" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <materialDesign:PackIcon Kind="ScriptText" Height="45" Width="50" Margin="10,0,0,0" />
+                        <TextBlock Text="LOGS" FontSize="21" Margin="2,-11,0,0" FontFamily="Segoe UI Black" Foreground="Black" FontWeight="Bold" Height="25" Width="101"/>
+                    </StackPanel>
+                </Button>
+                <Button Uid="4" Width="160" Height="60" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Click="Button_Click" FontSize="18" FontFamily="Segoe UI Black">
+                    <StackPanel Height="60" Width="160" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <materialDesign:PackIcon Kind="Database" Height="45" Width="45" Margin="7,2,0,0" />
+                        <TextBlock Text="DATABASE" FontSize="16" Margin="2,-5,0,0" FontFamily="Segoe UI Black" Foreground="Black" FontWeight="Bold" Height="25" Width="101"/>
+                    </StackPanel>
+                </Button>
                 <Button Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Center" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" HorizontalAlignment="Right" Margin="4,0,0,0">
                     <materialDesign:PackIcon Kind="Power" Foreground="Red" Width="45" Height="45" HorizontalAlignment="Center" VerticalAlignment="Center" />
                 </Button>

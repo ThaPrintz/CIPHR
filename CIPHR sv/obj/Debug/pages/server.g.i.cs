@@ -45,7 +45,7 @@ namespace CIPHR_server.pages {
     public partial class server : System.Windows.Controls.UserControl, System.Windows.Markup.IComponentConnector {
         
         
-        #line 40 "..\..\..\pages\server.xaml"
+        #line 49 "..\..\..\pages\server.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBlock sv_status;
         
@@ -87,7 +87,7 @@ namespace CIPHR_server.pages {
             return;
             case 2:
             
-            #line 49 "..\..\..\pages\server.xaml"
+            #line 59 "..\..\..\pages\server.xaml"
             ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.Startsv);
             
             #line default

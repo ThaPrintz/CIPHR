@@ -112,6 +112,10 @@
             <Button x:Name="PowerButton" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Black" Click="Pb_Click" Margin="0" VerticalAlignment="Bottom" HorizontalAlignment="Left">
                 <md:PackIcon Kind="Door" Foreground="WhiteSmoke" Width="50" Height="50"/>
             </Button>
+
+            <Button x:Name="ForgotInfo" Width="50" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Black" Click="Pb_Click" Margin="45,0,0,2" VerticalAlignment="Bottom" HorizontalAlignment="Left">
+                <md:PackIcon Kind="ForgotPassword" Foreground="WhiteSmoke" Width="50" Height="50"/>
+            </Button>
         </Grid>
 
 

@@ -14,43 +14,11 @@
             </Label.Effect>
         </Label>
 
-        <materialDesign:Card Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}" Width="350" HorizontalAlignment="Center" Margin="0,75,0,0" Height="70" VerticalAlignment="Top" FontFamily="Segoe UI Black" BorderThickness="2" BorderBrush="Red">
+        <materialDesign:Card Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}" Width="350" HorizontalAlignment="Center" Margin="363,75,363,0" Height="128" VerticalAlignment="Top" FontFamily="Segoe UI Black" BorderThickness="2">
             <materialDesign:Card.Effect>
                 <DropShadowEffect/>
             </materialDesign:Card.Effect>
             <materialDesign:Card.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="Black"/>
-                    <GradientStop Color="#FF363636" Offset="1"/>
-                </LinearGradientBrush>
-            </materialDesign:Card.Background>
-            <StackPanel>
-                <Grid Height="70" >
-                    <materialDesign:PackIcon Kind="NetworkAttachedStorage" Width="70" Height="70" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White" Margin="3,0,0,0">
-                        <materialDesign:PackIcon.Effect>
-                            <DropShadowEffect ShadowDepth="3" BlurRadius="3"/>
-                        </materialDesign:PackIcon.Effect>
-                    </materialDesign:PackIcon>
-                    <TextBlock Text="Server Status" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 57 4" FontFamily="Segoe UI Black" Foreground="White">
-                        <TextBlock.Effect>
-                            <DropShadowEffect BlurRadius="3" ShadowDepth="4"/>
-                        </TextBlock.Effect>
-                    </TextBlock>
-
-                    <TextBlock x:Name="sv_status" Text="OFFLINE" FontSize="25" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,7,1" FontFamily="Arial Black" Foreground="#FFFF4444" FontWeight="Bold">
-                        <TextBlock.Effect>
-                            <DropShadowEffect BlurRadius="3" ShadowDepth="3"/>
-                        </TextBlock.Effect>
-                    </TextBlock>
-                </Grid>
-            </StackPanel>
-        </materialDesign:Card>
-
-        <Button HorizontalAlignment="Left" VerticalAlignment="Center" Width="175" Click="Startsv" Height="55" Margin="275,0,0,100" BorderThickness="3" Foreground="Black">
-            <Button.Effect>
-                <DropShadowEffect/>
-            </Button.Effect>
-            <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <LinearGradientBrush.RelativeTransform>
                         <TransformGroup>
@@ -63,7 +31,35 @@
                     <GradientStop Color="#FF7F94EE" Offset="0.022"/>
                     <GradientStop Color="#FF00D09C" Offset="1"/>
                 </LinearGradientBrush>
-            </Button.Background>
+            </materialDesign:Card.Background>
+
+            <StackPanel>
+                <Grid Height="70" >
+                    <materialDesign:PackIcon Kind="NetworkAttachedStorage" Width="100" Height="100" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White" Margin="5,10,0,-40">
+                        <materialDesign:PackIcon.Effect>
+                            <DropShadowEffect ShadowDepth="3" BlurRadius="3"/>
+                        </materialDesign:PackIcon.Effect>
+                    </materialDesign:PackIcon>
+                    <TextBlock Text="Server Status" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="110,15,41,2" FontFamily="Segoe UI Black" Foreground="Black" Height="53" Width="199">
+                        <TextBlock.Effect>
+                            <DropShadowEffect BlurRadius="3" ShadowDepth="4" Color="#FFE4E4E4"/>
+                        </TextBlock.Effect>
+                    </TextBlock>
+
+                    <TextBlock x:Name="sv_status" Text="OFFLINE" FontSize="36" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,73,57,-43" FontFamily="Arial Black" Foreground="#FFFF4444" FontWeight="Bold" Height="40" Width="183">
+                        <TextBlock.Effect>
+                            <DropShadowEffect BlurRadius="3" ShadowDepth="3"/>
+                        </TextBlock.Effect>
+                    </TextBlock>
+                </Grid>
+                <Separator HorizontalAlignment="Center" Height="2" VerticalAlignment="Top" Width="195" Background="Black" Margin="70,-10,0,2"/>
+            </StackPanel>
+        </materialDesign:Card>
+
+        <Button HorizontalAlignment="Left" VerticalAlignment="Center" Width="175" Click="Startsv" Height="55" Margin="274,233,0,222" BorderThickness="3" Foreground="White" Background="Black">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
             <Button.BorderBrush>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF7F94EE" Offset="0"/>
@@ -74,25 +70,11 @@
 
             <StackPanel Height="55" Width="175" Margin="-15,-4,0,0">
                 <materialDesign:PackIcon Kind="PowerSettings" Height="45" Width="45" Margin="2,3,0,0" VerticalAlignment="Center"/>
-                <TextBlock Text="Start server" FontSize="19" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="28,-42,0,0" FontFamily="Segoe UI Black" Foreground="Black" FontWeight="Bold"/>
+                <TextBlock Text="Start server" FontSize="19" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="28,-42,0,0" FontFamily="Segoe UI Black" Foreground="White" FontWeight="Bold"/>
             </StackPanel>
         </Button>
 
-        <Button HorizontalAlignment="Center" VerticalAlignment="Center" Width="175" Height="55" Margin="350,0,0,100" BorderThickness="3" Foreground="Black">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <LinearGradientBrush.RelativeTransform>
-                        <TransformGroup>
-                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
-                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
-                            <RotateTransform Angle="90" CenterY="0.5" CenterX="0.5"/>
-                            <TranslateTransform/>
-                        </TransformGroup>
-                    </LinearGradientBrush.RelativeTransform>
-                    <GradientStop Color="#FF7F94EE" Offset="0.022"/>
-                    <GradientStop Color="#FF00D09C" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background>
+        <Button HorizontalAlignment="Center" VerticalAlignment="Center" Width="175" Height="54" Margin="627,234,274,222" BorderThickness="3" Foreground="White" Background="Black">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
@@ -105,8 +87,47 @@
 
             <StackPanel Height="55" Width="175" Margin="-15,-4,0,0">
                 <materialDesign:PackIcon Kind="PowerOff" Height="45" Width="45" Margin="2,4,0,0" VerticalAlignment="Center"/>
-                <TextBlock Text="Stop server" FontSize="19" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="28,-43,0,0" FontFamily="Segoe UI Black" Foreground="Black" FontWeight="Bold"/>
+                <TextBlock Text="Stop server" FontSize="19" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="28,-43,0,0" FontFamily="Segoe UI Black" Foreground="White" FontWeight="Bold"/>
             </StackPanel>
         </Button>
+
+        <materialDesign:Card Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}" Width="250" Padding="8" HorizontalAlignment="Left" Opacity="0.8" Margin="237,316,0,120" Height="74" VerticalAlignment="Center">
+            <materialDesign:Card.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF373737" Offset="0.143"/>
+                    <GradientStop Color="#FF585858" Offset="1"/>
+                </LinearGradientBrush>
+            </materialDesign:Card.Background>
+            <StackPanel Margin="-6,-7,-6,-6">
+                <Grid Height="72" >
+                    <materialDesign:PackIcon Kind="Ip" Width="67" Height="72" HorizontalAlignment="Left" VerticalAlignment="Center" />
+                    <TextBlock Text="Server IP" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="67,24,11,31" FontFamily="/CIPHR server;component/#a Lives BlackLives" Width="168"/>
+
+                    <Separator HorizontalAlignment="Center" Height="10"  VerticalAlignment="Center" Width="145" Margin="67,41,34,21" Background="Black" BorderBrush="Black" OpacityMask="Black"/>
+
+                    <TextBlock Text="127.0.0.1" FontSize="17" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,51,85,0" FontFamily="Sitka Text" Foreground="SpringGreen"/>
+
+                </Grid>
+            </StackPanel>
+        </materialDesign:Card>
+
+        <materialDesign:Card Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}" Width="250" Padding="8" HorizontalAlignment="Right" Opacity="0.8" Margin="0,316,239,120">
+            <materialDesign:Card.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF373737" Offset="0.143"/>
+                    <GradientStop Color="#FF585858" Offset="1"/>
+                </LinearGradientBrush>
+            </materialDesign:Card.Background>
+            <StackPanel Margin="-6,-7,-6,-6">
+                <Grid Height="72" >
+                    <materialDesign:PackIcon Kind="Deskphone" Width="67" Height="72" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <TextBlock Text="Data Transit Port" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="68,18,10,37" FontFamily="/CIPHR server;component/#a Lives BlackLives" Width="168" FontWeight="Bold"/>
+
+                    <Separator HorizontalAlignment="Center" Height="10" VerticalAlignment="Center" Width="163" Background="Black" Margin="67,38,16,30" BorderThickness="0" BorderBrush="Black" Foreground="White" OpacityMask="Black" />
+
+                    <TextBlock Text="80" FontSize="17" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,50,109,2" FontFamily="Arial Black" Foreground="SpringGreen"/>
+                </Grid>
+            </StackPanel>
+        </materialDesign:Card>
     </Grid>
 </UserControl>

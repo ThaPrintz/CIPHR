@@ -40,3 +40,4 @@ C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\CIPHR server.csproj.CopyComplet
 C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\CIPHR server.exe
 C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\CIPHR server.pdb
 C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Printz\Desktop\CIPHR\CIPHR sv\obj\Debug\CIPHR_server.dbmgr.resources

@@ -26,6 +26,12 @@ namespace CIPHR_server.pages
 
         }
 
+        private void opendbmgr(object sender, RoutedEventArgs e)
+        {
+            dbmgr _newdbmgr = new dbmgr();
+            _newdbmgr.Show();
+        }
+
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
 

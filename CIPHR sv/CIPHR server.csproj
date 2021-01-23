@@ -91,6 +91,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ciphr_serversDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="dbmgr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dbmgr.Designer.cs">
+      <DependentUpon>dbmgr.cs</DependentUpon>
+    </Compile>
     <Compile Include="SV Interface\CServerRepo.cs" />
     <Compile Include="SV Interface\csv_struct.cs" />
     <Compile Include="SV Interface\ServerRepository.cs" />
@@ -173,10 +179,14 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="dbmgr.resx">
+      <DependentUpon>dbmgr.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <Resource Include="aBlackLives.otf" />
     <None Include="ciphr_serversDataSet.xsc">
       <DependentUpon>ciphr_serversDataSet.xsd</DependentUpon>
     </None>
