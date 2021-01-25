@@ -37,7 +37,7 @@ namespace CIPHR_server
         {
             using (SqlConnection db = new SqlConnection(cnstr))
             {
-                SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM Users WHERE username='" + user.Username + "' AND password='" + user.Password + "'", db);
+                SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM cUsers WHERE username='" + user.Username + "' AND password='" + user.Password + "'", db);
 
                 DataTable dt = new DataTable(); //this is creating a virtual table  
                 sda.Fill(dt);

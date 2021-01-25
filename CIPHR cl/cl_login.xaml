@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:CIPHR"
         mc:Ignorable="d"
         xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
-        Title="CIPHR cl" Height="396" Width="650" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="CIPHR cl" Height="396" Width="650" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="favicon.ico">
     <Window.Effect>
         <DropShadowEffect/>
     </Window.Effect>

@@ -35,10 +35,10 @@ namespace CIPHR_server
             }
         }
 
-        public static async void REG(Socket cl, string u, string p)
+        public static async void REG(Socket cl, string u, string p, string e, string ph)
         {
             ICUserRepo repository = new UserRepository();
-            bool result = await repository.Insert(new cuser() { Username = u, Password = p, _clhandle = cl });
+            bool result = await repository.Insert(new cuser() { Username = u, Password = p, _clhandle = cl, Emailadd = e, Phonenumber = ph });
 
             if (result) {
                 cPrint("new user registered with username '" + u + "' and password '" + p + "'");

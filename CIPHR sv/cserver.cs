@@ -24,17 +24,15 @@ namespace CIPHR_server
         public static string[] ParseCmd(string ccmd)
         {
             var cmd = ccmd.Split('|');
-            var data = cmd[1].Split(':');
+            var data = cmd[1].Split(':');  
 
-            string[] ret;
-
-            if (cmd[0] == "REGU") {
-               ret = { cmd[0], data[0], data[1], data[2], data[3] };
+            if (String.Compare(cmd[0].Remove(0, 1), "REGU") == 0) {
+                string[] ret = { cmd[0], data[0], data[1], data[2], data[3] };
+                return ret;
             } else {
-               ret = { cmd[0], data[0], data[1] };
+                string[] ret = { cmd[0], data[0], data[1] };
+                return ret;
             }
-
-            return ret;
         }
 
         public static void SendCLData(Socket cl, string str)
@@ -73,14 +71,15 @@ namespace CIPHR_server
                     var pkg = ParseCmd(data); 
                     cPrint("NET CMD: " + pkg[0].Remove(0, 1));
                     cPrint("arg1: " + pkg[1]);
-                    cPrint("arg2: " + pkg[2].Remove(pkg[2].Length-1, 1));
-                    if(pkg.Length > 2) {
+                    if(pkg.Length > 3) {
+                        cPrint("arg2: " + pkg[2]);
                         cPrint("arg3: " + pkg[3]);
-                        cPrint("arg4: " + pkg[4]);
+                        cPrint("arg4: " + pkg[4].Remove(pkg[4].Length - 1, 1));
                     }
+                    cPrint("arg2: " + pkg[2].Remove(pkg[2].Length - 1, 1));
 
-                    if(String.Compare(pkg[0].Remove(0, 1),"REGU") == 0) {
-                        sv_netcmd.REG(handler, pkg[1], pkg[2], pkg[3], );
+                    if (String.Compare(pkg[0].Remove(0, 1),"REGU") == 0) {
+                        sv_netcmd.REG(handler, pkg[1], pkg[2], pkg[3], pkg[4]);
                     } else if (String.Compare(pkg[0].Remove(0, 1), "AUTH") == 0) {
                         sv_netcmd.AUTH(handler, pkg[1], pkg[2].Remove(pkg[2].Length - 1, 1));
                     } else if (String.Compare(pkg[0].Remove(0, 1), "REGSV") == 0) {
