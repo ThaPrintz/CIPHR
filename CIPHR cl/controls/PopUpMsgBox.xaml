@@ -24,7 +24,7 @@
         </LinearGradientBrush>
     </Window.Background>
     <Grid>
-        <Image HorizontalAlignment="Left" Height="115" Margin="25,20,0,0" VerticalAlignment="Top" Width="125" Source="/CIPHR;component/clg.png" Stretch="Fill"/>
+        <Image HorizontalAlignment="Left" Height="115" Margin="25,20,0,0" VerticalAlignment="Top" Width="125" Source="/CIPHR;component/rsc/clg.png" Stretch="Fill"/>
         <TextBlock x:Name="msg" HorizontalAlignment="Left" Margin="178,36,0,0" TextWrapping="Wrap" Text="Default popup msg box text" VerticalAlignment="Top" Height="67" Width="412" FontSize="22" FontFamily="/CIPHR;component/#Yonky Black" Foreground="Black"/>
         <Button Content="Close" Click="msgboxclose" HorizontalAlignment="Left" Margin="260,108,0,0" VerticalAlignment="Top" Width="260" FontFamily="/CIPHR;component/#Roboto Slab" FontSize="22" Foreground="Black" BorderBrush="Black" BorderThickness="2" Height="34">
             <Button.Background>

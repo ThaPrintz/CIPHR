@@ -75,14 +75,15 @@ namespace CIPHR_server
                         cPrint("arg2: " + pkg[2]);
                         cPrint("arg3: " + pkg[3]);
                         cPrint("arg4: " + pkg[4].Remove(pkg[4].Length - 1, 1));
-                    }
-                    cPrint("arg2: " + pkg[2].Remove(pkg[2].Length - 1, 1));
+                    } else {
+                        cPrint("arg2: " + pkg[2].Remove(pkg[2].Length - 1, 1));
+                    }                   
 
                     if (String.Compare(pkg[0].Remove(0, 1),"REGU") == 0) {
                         sv_netcmd.REG(handler, pkg[1], pkg[2], pkg[3], pkg[4]);
                     } else if (String.Compare(pkg[0].Remove(0, 1), "AUTH") == 0) {
                         sv_netcmd.AUTH(handler, pkg[1], pkg[2].Remove(pkg[2].Length - 1, 1));
-                    } else if (String.Compare(pkg[0].Remove(0, 1), "REGSV") == 0) {
+                    } else if (String.Compare(pkg[0].Remove(0, 1), "REGSV") == 0) {  
                         sv_netcmd.CREATE(handler, pkg[1], pkg[2].Remove(pkg[2].Length - 1, 1));
                     }
                 }

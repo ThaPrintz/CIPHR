@@ -25,6 +25,8 @@ namespace CIPHR.controls
             InitializeComponent();
         }
 
+        string cnstr = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\clservers.mdf;Integrated Security=True";
+
         private void RegSv(object sender, RoutedEventArgs e)
         {
 

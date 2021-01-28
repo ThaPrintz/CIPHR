@@ -27,6 +27,11 @@ namespace CIPHR
 
             var _ctxm = new cl_main_ctxm();
             _ctxm.Show();
+
+            var svbtn = new ServerButton();
+            svbtn.btnimg.Source = new BitmapImage(new Uri("C:\\Users\\Printz\\Desktop\\CIPHR\\CIPHR cl\\clg.png"));
+  
+            svgrid.Children.Add(svbtn);
         }
 
         private void _gmd(object sender, MouseButtonEventArgs e)
