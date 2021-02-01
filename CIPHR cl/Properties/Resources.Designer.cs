@@ -63,7 +63,7 @@ namespace CIPHR.Properties {
         /// <summary>
         ///   Looks up a localized string similar to if not exists(select servername from asscServers where servername=@Sv_name)
         ///begin
-        ///    insert into cServers(servername, ownername, textch, voicech, members, ranks)
+        ///    insert into asscServers(servername, serverowner, textch, voicech, members, ranks)
         ///    values(@Sv_name, @Ownername, @tch, @vch, @mbrs, @rnks)
         ///end.
         /// </summary>

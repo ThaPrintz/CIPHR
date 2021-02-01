@@ -6,12 +6,12 @@
         xmlns:local="clr-namespace:CIPHR"
         mc:Ignorable="d"
     xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
-        Title="CIPHR cl" Height="532" Width="650" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="favicon.ico">
+        Title="CIPHR cl" Height="532" Width="650" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="/rsc/favicon.ico">
     <Window.Effect>
         <DropShadowEffect/>
     </Window.Effect>
     <Grid Background="Black" MouseDown="_gmd">
-        <Image HorizontalAlignment="Left" Height="147" VerticalAlignment="Top" Width="650" Source="clogoo.png" Stretch="Fill"/>
+        <Image HorizontalAlignment="Left" Height="147" VerticalAlignment="Top" Width="650" Source="/rsc/clogoo.png" Stretch="Fill"/>
         <Rectangle HorizontalAlignment="Left" Height="370" Margin="25,152,0,0" Stroke="Black" VerticalAlignment="Top" Width="600">
             <Rectangle.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -29,12 +29,12 @@
             </Rectangle.Fill>
         </Rectangle>
         <Grid HorizontalAlignment="Left" Height="351" Margin="50,158,0,0" VerticalAlignment="Top" Width="550" Background="#BF000000">
-            <Label Content="username" HorizontalAlignment="Left" VerticalAlignment="Top" Width="124" Foreground="White" Height="40" FontSize="24" FontWeight="Bold" FontFamily="/CIPHR;component/#Roboto Slab" Margin="31,27,0,0"/>
-            <Label Content="password" HorizontalAlignment="Left" VerticalAlignment="Top" Width="123" Foreground="White" Height="40" FontSize="24" FontWeight="Bold" FontFamily="/CIPHR;component/#Roboto Slab" Margin="31,76,0,0"/>
-            <Label Content="confirm" HorizontalAlignment="Left" VerticalAlignment="Top" Width="98" Foreground="White" Height="40" FontSize="24" FontWeight="Bold" FontFamily="/CIPHR;component/#Roboto Slab" Margin="51,125,0,0"/>
+            <Label Content="username" HorizontalAlignment="Left" VerticalAlignment="Top" Width="124" Foreground="White" Height="40" FontSize="24" FontWeight="Bold" FontFamily="/CIPHR;component/rsc/#Roboto Slab" Margin="31,27,0,0"/>
+            <Label Content="password" HorizontalAlignment="Left" VerticalAlignment="Top" Width="123" Foreground="White" Height="40" FontSize="24" FontWeight="Bold" FontFamily="/CIPHR;component/rsc/#Roboto Slab" Margin="31,76,0,0"/>
+            <Label Content="confirm" HorizontalAlignment="Left" VerticalAlignment="Top" Width="98" Foreground="White" Height="40" FontSize="24" FontWeight="Bold" FontFamily="/CIPHR;component/rsc/#Roboto Slab" Margin="51,125,0,0"/>
 
-            <Label Content="e-mail" HorizontalAlignment="Left" VerticalAlignment="Center" Width="83" Foreground="White" Height="40" FontSize="24" FontWeight="Bold" FontFamily="/CIPHR;component/#Roboto Slab" Margin="66,205,0,108"/>
-            <Label Content="phone #" HorizontalAlignment="Left" VerticalAlignment="Center" Width="98" Foreground="White" Height="40" FontSize="24" FontWeight="Bold" FontFamily="/CIPHR;component/#Roboto Slab" Margin="51,258,0,53"/>
+            <Label Content="e-mail" HorizontalAlignment="Left" VerticalAlignment="Center" Width="83" Foreground="White" Height="40" FontSize="24" FontWeight="Bold" FontFamily="/CIPHR;component/rsc/#Roboto Slab" Margin="66,205,0,108"/>
+            <Label Content="phone #" HorizontalAlignment="Left" VerticalAlignment="Center" Width="98" Foreground="White" Height="40" FontSize="24" FontWeight="Bold" FontFamily="/CIPHR;component/rsc/#Roboto Slab" Margin="51,258,0,53"/>
 
             <StackPanel>
                 <TextBox x:Name="uname" Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}" VerticalAlignment="Center" IsEnabled="{Binding IsChecked, ElementName=MaterialDesignOutlinedTextFieldTextBoxEnabledComboBox}" Width="350" Background="White" Margin="160,25,40,0" BorderBrush="{x:Null}" FontSize="16" FontFamily="Segoe UI Black" FontWeight="Bold" Height="42" CaretBrush="#FF00D09C" >
@@ -120,7 +120,7 @@
 
             </StackPanel>
 
-            <Button Content="Register" HorizontalAlignment="Left" Margin="159,306,0,0" VerticalAlignment="Top" Click="RegUser" Width="351" Background="Black" FontFamily="/CIPHR;component/#Yonky Black" FontSize="18" BorderThickness="2" FontWeight="Bold" Height="35" Foreground="#DDFFFFFF">
+            <Button Content="Register" HorizontalAlignment="Left" Margin="159,306,0,0" VerticalAlignment="Top" Click="RegUser" Width="351" Background="Black" FontFamily="/CIPHR;component/rsc/#Yonky Black" FontSize="18" BorderThickness="2" FontWeight="Bold" Height="35" Foreground="#DDFFFFFF">
                 <Button.Effect>
                     <DropShadowEffect/>
                 </Button.Effect>

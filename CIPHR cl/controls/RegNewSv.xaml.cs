@@ -25,7 +25,19 @@ namespace CIPHR.controls
             InitializeComponent();
         }
 
-        string cnstr = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\clservers.mdf;Integrated Security=True";
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
+
+            dlg.DefaultExt = ".png";
+            dlg.Filter = "JPEG Files (*.jpeg)|*.jpeg|PNG Files (*.png)|*.png|JPG Files (*.jpg)|*.jpg|GIF Files (*.gif)|*.gif";
+
+            Nullable<bool> result = dlg.ShowDialog();
+
+            if (result == true) {
+                string filename = dlg.FileName;
+            }
+        }
 
         private void RegSv(object sender, RoutedEventArgs e)
         {

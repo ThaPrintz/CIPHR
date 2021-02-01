@@ -6,12 +6,12 @@
         xmlns:local="clr-namespace:CIPHR"
         mc:Ignorable="d"
         xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
-        Title="CIPHR cl" Height="396" Width="650" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="favicon.ico">
+        Title="CIPHR cl" Height="396" Width="650" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="rsc/favicon.ico">
     <Window.Effect>
         <DropShadowEffect/>
     </Window.Effect>
     <Grid Background="#FF343333" MouseDown="_gmd">
-        <Image HorizontalAlignment="Left" Height="147" VerticalAlignment="Top" Width="650" Source="clogoo.png" Stretch="Fill"/>
+        <Image HorizontalAlignment="Left" Height="147" VerticalAlignment="Top" Width="650" Source="rsc/clogoo.png" Stretch="Fill"/>
 
         <Rectangle HorizontalAlignment="Left" Height="218" Margin="20,158,0,0" Stroke="Black" VerticalAlignment="Top" Width="610">
             <Rectangle.Fill>
@@ -31,8 +31,8 @@
         </Rectangle>
 
         <Grid HorizontalAlignment="Left" Height="182" Margin="50,170,0,0" VerticalAlignment="Top" Width="550" Background="#BF000000">
-            <Label Content="username" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Foreground="White" Height="40" FontSize="24" FontWeight="Bold" FontFamily="/CIPHR;component/#Roboto Slab" Margin="30,28,0,0"/>
-            <Label Content="password" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Foreground="White" Height="40" FontSize="24" FontWeight="Bold" FontFamily="/CIPHR;component/#Roboto Slab" Margin="30,84,0,0"/>
+            <Label Content="username" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Foreground="White" Height="40" FontSize="24" FontWeight="Bold" FontFamily="/CIPHR;component/rsc/#Roboto Slab" Margin="30,28,0,0"/>
+            <Label Content="password" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Foreground="White" Height="40" FontSize="24" FontWeight="Bold" FontFamily="/CIPHR;component/rsc/#Roboto Slab" Margin="30,84,0,0"/>
 
             <StackPanel>
                 <TextBox x:Name="uname" Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}" VerticalAlignment="Center" CaretBrush="#FF00D09C" IsEnabled="{Binding IsChecked, ElementName=MaterialDesignOutlinedTextFieldTextBoxEnabledComboBox}" Width="350" Background="White" Margin="160,25,40,0" BorderBrush="{x:Null}" BorderThickness="0,0,0,1" FontSize="16" FontFamily="Segoe UI Black" FontWeight="Bold" Height="42" >
@@ -69,7 +69,7 @@
                 </PasswordBox>
             </StackPanel>
 
-            <Button Content="Login" HorizontalAlignment="Left" Margin="159,132,0,0" VerticalAlignment="Top" Click="AuthLogin" Width="225" Background="Black" FontFamily="/CIPHR;component/#Yonky Black" FontSize="18" BorderThickness="2" FontWeight="Bold" Height="35" Foreground="White">
+            <Button Content="Login" HorizontalAlignment="Left" Margin="159,132,0,0" VerticalAlignment="Top" Click="AuthLogin" Width="225" Background="Black" FontFamily="/CIPHR;component/rsc/#Yonky Black" FontSize="18" BorderThickness="2" FontWeight="Bold" Height="35" Foreground="White">
                 <Button.Effect>
                     <DropShadowEffect/>
                 </Button.Effect>
@@ -89,7 +89,7 @@
                 </Button.BorderBrush>
             </Button>
 
-            <Button Content="Register" HorizontalAlignment="Left" Margin="389,132,0,0" VerticalAlignment="Top" Click="Reg_Click" Width="121" Background="Black"  FontFamily="/CIPHR;component/#Yonky Black" FontSize="18" BorderThickness="2" FontWeight="Bold" Height="35" Foreground="White">
+            <Button Content="Register" HorizontalAlignment="Left" Margin="389,132,0,0" VerticalAlignment="Top" Click="Reg_Click" Width="121" Background="Black"  FontFamily="/CIPHR;component/rsc/#Yonky Black" FontSize="18" BorderThickness="2" FontWeight="Bold" Height="35" Foreground="White">
                 <Button.Effect>
                     <DropShadowEffect/>
                 </Button.Effect>

@@ -22,19 +22,21 @@
         </LinearGradientBrush>
     </Window.Background>
     <Grid>
-        <Image HorizontalAlignment="Left" Height="98" Margin="10,10,-33,0" VerticalAlignment="Top" Width="437" Source="/CIPHR;component/clogoo.png" Stretch="UniformToFill"/>
+        <Image HorizontalAlignment="Left" Height="98" Margin="10,10,-33,0" VerticalAlignment="Top" Width="437" Source="/CIPHR;component/rsc/clogoo.png" Stretch="UniformToFill"/>
 
-        <Button Height="90"  Background="{x:Null}" BorderBrush="{x:Null}" Width="121" HorizontalAlignment="Center" Margin="168,134,168,171">
-            <md:PackIcon Kind="ImagePlus" Width="80" Height="80" Foreground="White" BorderThickness="0" VerticalAlignment="Center" HorizontalAlignment="Center" >
-                <md:PackIcon.Effect>
-                    <DropShadowEffect/>
-                </md:PackIcon.Effect>
-            </md:PackIcon>
+        <Button Height="Auto" Click="button1_Click" BorderBrush="{x:Null}" Width="200" HorizontalAlignment="Center" Margin="155,176,102,56">
+            <Button.Effect>
+                <DropShadowEffect BlurRadius="2" ShadowDepth="2" Color="White"/>
+            </Button.Effect>
+            <Button.Background>
+                <ImageBrush ImageSource="upldsvimg.png" Stretch="Uniform" Opacity="0.75"/>
+            </Button.Background>
+
         </Button>
-        <Label Content="Upload photo" HorizontalAlignment="Left" Margin="168,229,0,0" VerticalAlignment="Top" Height="38" Width="127" FontFamily="/CIPHR;component/#Roboto Slab" FontSize="18"/>
-        <Label Content="Server name" HorizontalAlignment="Left" Margin="11,287,0,0" VerticalAlignment="Top" Height="38" Width="152" FontSize="22" FontFamily="/CIPHR;component/#Roboto Slab"/>
+        <Label Content="and photo" HorizontalAlignment="Left" Margin="28,149,0,0" VerticalAlignment="Top" Height="38" Width="122" FontFamily="/CIPHR;component/rsc/#Roboto Slab" FontSize="24"/>
+        <Label Content="Server name" HorizontalAlignment="Left" Margin="11,129,0,0" VerticalAlignment="Top" Height="38" Width="152" FontSize="24" FontFamily="/CIPHR;component/rsc/#Roboto Slab"/>
 
-        <TextBox x:Name="svname" Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}" VerticalAlignment="Center" CaretBrush="#FF00D09C" IsEnabled="{Binding IsChecked, ElementName=MaterialDesignOutlinedTextFieldTextBoxEnabledComboBox}" Background="White" Margin="163,287,20,66" BorderBrush="{x:Null}" BorderThickness="0,0,0,1" FontSize="16" FontFamily="Segoe UI Black" FontWeight="Bold" Height="42" >
+        <TextBox x:Name="svname" Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}" VerticalAlignment="Center" CaretBrush="#FF00D09C" IsEnabled="{Binding IsChecked, ElementName=MaterialDesignOutlinedTextFieldTextBoxEnabledComboBox}" Background="White" Margin="178,129,10,224" BorderBrush="{x:Null}" BorderThickness="0,0,0,1" FontSize="16" FontFamily="Segoe UI Black" FontWeight="Bold" Height="42" >
             <TextBox.Foreground>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <LinearGradientBrush.RelativeTransform>
@@ -50,6 +52,10 @@
                 </LinearGradientBrush>
             </TextBox.Foreground>
         </TextBox>
-        <Button Content="Create server" HorizontalAlignment="Left" Margin="80,344,0,0" VerticalAlignment="Top" Click="RegSv"  Width="282" FontFamily="/CIPHR;component/#Yonky Black" FontSize="18"/>
+        <Button Content="Create server" HorizontalAlignment="Left" Margin="11,344,0,0" VerticalAlignment="Top" Click="RegSv"  Width="426" FontFamily="/CIPHR;component/rsc/#Yonky Black" FontSize="22" Height="41">
+            <Button.Effect>
+                <DropShadowEffect ShadowDepth="3"/>
+            </Button.Effect>
+        </Button>
     </Grid>
 </Window>

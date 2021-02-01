@@ -29,7 +29,7 @@ namespace CIPHR
             _ctxm.Show();
 
             var svbtn = new ServerButton();
-            svbtn.btnimg.Source = new BitmapImage(new Uri("C:\\Users\\Printz\\Desktop\\CIPHR\\CIPHR cl\\clg.png"));
+            svbtn.btnimg.Source = new BitmapImage(new Uri("C:\\Users\\Printz\\Desktop\\CIPHR\\CIPHR cl\\rsc\\clg.png"));
   
             svgrid.Children.Add(svbtn);
         }
