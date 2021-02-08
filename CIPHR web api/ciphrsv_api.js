@@ -4,13 +4,17 @@ const net = require('net');
 
 const CSOCKENUMS = Object.freeze({"TCPSOCK":0, "UDPSOCK":1, "IPV4SOCK":2, "IPV6SOCK":3, "WEBSOCK":4});
 
-function REG_csocket(host, portnum, dprtcl, ipprtcl)
+function csocket(host, portnum, dprtcl, ipprtcl)
 {
-	const _obj = {};
-	_obj.address = host;
-	_obj.port	 = portnum;
-	_obj.dataprt = dprtcl;
-	_obj.ipprt 	 = ipprtcl;
-	_obj.sock    = new net.Socket();
+	this.address = host;
+	this.port	 = portnum;
+	this.dataprt = dprtcl;
+	this.ipprt 	 = ipprtcl;
+	this.sock    = new net.Socket();
 	
+	this.cConnect = function() {
+		this.sock.connect(this.port, this.address, () =>{
+			console.log("show no love to homo thugs");
+		})
+	}
 }	
