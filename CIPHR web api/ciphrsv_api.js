@@ -1,20 +1,27 @@
 /*CIPHR server web api*/
 
-const net = require('net');
-
 const CSOCKENUMS = Object.freeze({"TCPSOCK":0, "UDPSOCK":1, "IPV4SOCK":2, "IPV6SOCK":3, "WEBSOCK":4});
 
-function csocket(host, portnum, dprtcl, ipprtcl)
+const csocket = function(csockdata)
 {
-	this.address = host;
-	this.port	 = portnum;
-	this.dataprt = dprtcl;
-	this.ipprt 	 = ipprtcl;
-	this.sock    = new net.Socket();
+	const { Socket } = require("net");
 	
-	this.cConnect = function() {
-		this.sock.connect(this.port, this.address, () =>{
-			console.log("show no love to homo thugs");
-		})
-	}
+	this.address = csockdata.host;
+	this.port	 = csockdata.portnum;
+	this.dataprt = csockdata.dprtcl;
+	this.ipprt 	 = csockdata.ipprtcl;
+	
+	this.sock    = new Socket();
 }	
+
+csocket.prototype.Connect = function()
+{
+	this.sock.connect(this.port, this.address, () =>{
+		console.log("show no love to homo thugs");
+	})
+}
+
+csocket.prototype.Write = function(strMsg)
+{
+	this.sock.write(strMsg);
+}
